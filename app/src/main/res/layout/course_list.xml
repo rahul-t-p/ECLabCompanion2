@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<!--Since scroll view can have only one child we wrap entire view into a relative layout-->
+<RelativeLayout
+    android:background="@color/colorBG"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/bec_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#EC407A">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/becicon"/>
+                <ImageButton
+                    android:id="@+id/course_1_available"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:tint="#ffffff"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Electronics Workshop"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/bec_window"
+        android:orientation="vertical"
+        android:id="@+id/ecc_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#AB47BC">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/eccicon"/>
+            <ImageButton
+                android:id="@+id/course_2_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electronic Devices &amp; Circuits Lab"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@id/ecc_window"
+            android:orientation="vertical"
+            android:id="@+id/eda_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="#7E57C2">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:tint="#ffffff"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/edaicon"/>
+                <ImageButton
+                    android:id="@+id/course_3_available"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:tint="#ffffff"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronic Design Automation Lab"/>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/eda_window"
+        android:orientation="vertical"
+        android:id="@+id/aic_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#5C6BC0">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/aicicon"/>
+            <ImageButton
+                android:id="@+id/course_4_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analog Integrated Circuits Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/aic_window"
+        android:orientation="vertical"
+        android:id="@+id/lcd_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#42A5F5">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/lcdicon"/>
+            <ImageButton
+                android:id="@+id/course_5_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logic Circuit Design Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/lcd_window"
+        android:orientation="vertical"
+        android:id="@+id/dsp_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#29B6F6">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/dspicon"/>
+            <ImageButton
+                android:id="@+id/course_6_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Digital Signal Processing Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/dsp_window"
+        android:orientation="vertical"
+        android:id="@+id/pei_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#26C6DA">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/peiicon"/>
+            <ImageButton
+                android:id="@+id/course_7_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power Electronics &amp; Instrumentation Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/pei_window"
+        android:orientation="vertical"
+        android:id="@+id/mic_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#26A69A">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/micicon"/>
+            <ImageButton
+                android:id="@+id/course_8_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Microcontroller Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/mic_window"
+        android:orientation="vertical"
+        android:id="@+id/com_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#66BB6A">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/comicon"/>
+            <ImageButton
+                android:id="@+id/course_9_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communication Engineering Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/com_window"
+        android:orientation="vertical"
+        android:id="@+id/cos_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#9CCC65">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="#ffffff"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cosicon"/>
+            <ImageButton
+                android:id="@+id/course_10_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:tint="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communication Systems Lab"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

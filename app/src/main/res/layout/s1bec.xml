@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s1bec_xml"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBG"
+    tools:context="tcube.eclabcompanion.Experiment">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBG">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp1"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="1 . Familiarisation of Electronic Components"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp2"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp1"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="2 . Introduction to EDA Tools"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp3"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp2"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="3 . Familiarisation of Testing Instruments"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp4"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp3"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="4 . Testing Of Electronic Components"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp5"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp4"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="5 . Interconnection Methods and Soldering"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp6"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp5"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="6 . Printed Circuit Board"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp7"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp6"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="7 . Fixed Voltage Power Supply"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp8"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp7"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="8 . LED Blinking Circuit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp9"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp8"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="9 . Square wave Generation using 555"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp10"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp9"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="10 . Sine wave generation using 741"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp11"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp10"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="11 . RC Coupled Amplifier"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp12"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp11"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="12 . AND , NAND gates in Diode-Transistor Logic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp13"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp12"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="13 . Familiarization of PA system"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp14"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp13"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="14 . Assembling and Dismantling of Computers"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp15"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp14"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="15 . Coil and Transformer winding"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp16"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp15"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="16 . Subsystems of TV,CRO,CCTV"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp17"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp16"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="17 . Screen printing and PCB pattern transfer"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp18"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp17"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="18 . Soldering and De-soldering of SMD"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minimum_height_ads"
+        android:id="@+id/s1becexp19"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_below="@id/s1becexp18"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:onClick="s1bec_choose">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="19 . Introduction to Robotics"/>
+    </LinearLayout>
+    
+</RelativeLayout>
+</ScrollView>
