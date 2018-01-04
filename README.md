@@ -1,1 +1,1 @@
-# ECLabCompanion2
+# ECLabCompanion
