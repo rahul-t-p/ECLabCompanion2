@@ -1,8 +1,10 @@
 package tcube.eclabcompanion;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
@@ -11,6 +13,7 @@ import java.io.File;
 
 public class Experiment extends AppCompatActivity {
     int screen_flag;
+    Toolbar s1bec_toolbar;
     MenuItem menuItem;//Flag to determine current view.
 
     @Override
@@ -18,6 +21,10 @@ public class Experiment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.s1bec);
         setTitle("Basic Electronics Workshop");
+        s1bec_toolbar= (Toolbar) findViewById(R.id.s1bec_toolbar);
+        setSupportActionBar(s1bec_toolbar);
+        getSupportActionBar().setTitle("Basic Electronics Workshop");
+        s1bec_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
 
 
     }

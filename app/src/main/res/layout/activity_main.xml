@@ -1,745 +1,724 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:scrollbars="none"
-    android:background="@drawable/back"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context="tcube.eclabcompanion.MainActivity">
-    <RelativeLayout
+    <LinearLayout
+        android:background="@mipmap/ece"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EC Lab Companion"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
 
-      <RelativeLayout
-          android:id="@+id/ectext"
-          android:layout_width="match_parent"
-          android:layout_height="125dp">
+        </RelativeLayout>
 
-        <TextView
-            android:layout_centerInParent="true"
-            android:textColor="#ffffff"
-            android:textSize="35sp"
-            android:layout_width="wrap_content"
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ec Lab Companion"/>
-
-      </RelativeLayout>
-
-       <RelativeLayout
-           android:id="@+id/mainlayout"
-           android:layout_below="@id/ectext"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content">
-
-
-
-
-           <RelativeLayout
-               android:layout_marginTop="5dp"
-               android:id="@+id/first_layout"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-
-
-
-               <android.support.v7.widget.CardView
-                   android:layout_width="110dp"
-                   android:layout_marginTop="5dp"
-                   android:layout_marginStart="10dp"
-                   android:layout_alignParentStart="true"
-                   android:layout_height="140dp">
-                   <RelativeLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent">
-               <at.markushi.ui.CircleButton
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="course_popup"
-                   android:id="@+id/button"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#AD1457"
-                   android:tint="#ffffff"
-                   android:src="@drawable/addicon"/>
-                       <View
-
-                           android:layout_centerInParent="true"
-                           android:id="@+id/firstview"
-                           android:layout_below="@id/button"
-                           android:layout_margin="5dp"
-                           android:layout_width="match_parent"
-                           android:layout_height="1dp"
-                           android:background="#D7CCC8" />
-                       <TextView
-
-                           android:layout_centerInParent="true"
-                           android:id="@+id/firsttext"
-                           android:layout_below="@id/firstview"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:textSize="12sp"/>
-                       <TextView
-
-                           android:layout_centerInParent="true"
-                           android:layout_below="@id/firsttext"
-                           android:id="@+id/secondtext"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:text="Add Courses"
-                           android:textSize="12sp"/>
-
-                       <TextView
-
-                           android:layout_centerInParent="true"
-                           android:layout_below="@id/secondtext"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:textSize="12sp"/>
-                   </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-
-
-
-
-               <android.support.v7.widget.CardView
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:layout_marginStart="10dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-               <at.markushi.ui.CircleButton
-
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s1bec_go"
-                   android:id="@+id/s1bec"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   app:cb_color="#EC407A"
-                   android:tint="#ffffff"
-                   android:padding="20dp"
-                   android:src="@drawable/becicon"/>
-
-                   <View
-                       android:id="@+id/secondview"
-                       android:layout_below="@id/s1bec"
-                       android:layout_centerInParent="true"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:id="@+id/thirdtext"
-                       android:layout_below="@id/secondview"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Basic"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/thirdtext"
-                       android:id="@+id/fourthtext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Electronics"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/fourthtext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Workshop"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-               <android.support.v7.widget.CardView
-
-                   android:layout_marginEnd="10dp"
-                   android:layout_alignParentEnd="true"
-                   android:layout_marginTop="5dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s3ecc_go"
-                   android:id="@+id/s3ecc"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#AB47BC"
-                   android:tint="#ffffff"
-                   android:src="@drawable/eccicon"/>
-                   <View
-                       android:id="@+id/thirdview"
-                       android:layout_below="@id/s3ecc"
-                       android:layout_centerInParent="true"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_below="@id/thirdview"
-                       android:id="@+id/fifthtext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Electronics"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/fifthtext"
-                       android:id="@+id/sixthtext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Devices &amp;"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/sixthtext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Circuits Lab"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-           </RelativeLayout>
-
-
-
-           <RelativeLayout
-               android:layout_marginTop="10dp"
-               android:layout_below="@id/first_layout"
-               android:id="@+id/second_layout"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-               <android.support.v7.widget.CardView
-
-                   android:layout_width="110dp"
-                   android:layout_marginTop="5dp"
-                   android:layout_marginStart="10dp"
-                   android:layout_alignParentStart="true"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s3eda_go"
-                   android:id="@+id/s3eda"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#7E57C2"
-                   android:tint="#ffffff"
-                   android:src="@drawable/edaicon"/>
-                   <View
-                       android:id="@+id/fourthview"
-                       android:layout_below="@id/s3eda"
-                       android:layout_centerInParent="true"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_below="@id/fourthview"
-                       android:id="@+id/seventhtext"
-                       android:text="Electronics"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/seventhtext"
-                       android:id="@+id/eighttext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Design"
-                       android:textSize="12sp"/>
-
-                   <TextView
-                       android:text="Automation Lab"
-                       android:layout_below="@id/eighttext"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-
-
-               <android.support.v7.widget.CardView
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:layout_marginStart="10dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s4aic_go"
-                   android:id="@+id/s4aic"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#5C6BC0"
-                   android:tint="#ffffff"
-                   android:src="@drawable/aicicon"/>
-
-                   <View
-                       android:id="@+id/fifthview"
-                       android:layout_below="@id/s4aic"
-                       android:layout_centerInParent="true"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_centerInParent="true"
-                       android:id="@+id/nine"
-                       android:layout_below="@id/fifthview"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Analog"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_centerInParent="true"
-                       android:id="@+id/ten"
-                       android:layout_below="@id/nine"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Integrated"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/ten"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Circuits Lab"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-               <android.support.v7.widget.CardView
-
-                   android:layout_marginEnd="10dp"
-                   android:layout_alignParentEnd="true"
-                   android:layout_marginTop="5dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-               <at.markushi.ui.CircleButton
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s4lcd_go"
-                   android:id="@+id/s4lcd"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#42A5F5"
-                   android:tint="#ffffff"
-                   android:src="@drawable/lcdicon"/>
-
-                   <View
-                       android:layout_below="@id/s4lcd"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/sixthview"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_below="@id/sixthview"
-                       android:id="@+id/eleven"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Logic"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/eleven"
-                       android:id="@+id/twelve"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Circuit;"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/twelve"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Design Lab"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-
-           </RelativeLayout>
-
-           <RelativeLayout
-               android:layout_marginTop="10dp"
-               android:layout_below="@id/second_layout"
-               android:id="@+id/third_layout"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-
-               <android.support.v7.widget.CardView
-                   android:layout_width="110dp"
-                   android:layout_marginTop="5dp"
-                   android:layout_marginStart="10dp"
-                   android:layout_alignParentStart="true"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s5dsp_go"
-                   android:id="@+id/s5dsp"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#29B6F6"
-                   android:tint="#ffffff"
-                   android:src="@drawable/dspicon"/>
-                   <View
-                       android:layout_centerInParent="true"
-                       android:layout_below="@id/s5dsp"
-                       android:id="@+id/seventhview"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:text="Digital"
-                       android:layout_below="@id/seventhview"
-                       android:id="@+id/thirteen"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/thirteen"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/fourteen"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Signal"
-                       android:textSize="12sp"/>
-
-                   <TextView
-                       android:text="Processing Lab"
-                       android:layout_below="@id/fourteen"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-               <android.support.v7.widget.CardView
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:layout_marginStart="10dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s5pow_go"
-                   android:id="@+id/s5pow"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#26C6DA"
-                   android:tint="#ffffff"
-                   android:src="@drawable/peiicon"/>
-                   <View
-                       android:layout_below="@id/s5pow"
-                       android:id="@+id/eightview"
-                       android:layout_centerInParent="true"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_below="@id/eightview"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/fifteen"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Power"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/fifteen"
-                       android:id="@+id/sixteen"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Electronics &amp;"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/sixteen"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Instrumentation Lab"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-
-               <android.support.v7.widget.CardView
-
-                   android:layout_marginEnd="10dp"
-                   android:layout_alignParentEnd="true"
-                   android:layout_marginTop="5dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s6mic_go"
-                   android:id="@+id/s6mic"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#26A69A"
-                   android:tint="#ffffff"
-                   android:src="@drawable/micicon"/>
-                   <View
-                       android:layout_below="@id/s6mic"
-                       android:id="@+id/ninethview"
-                       android:layout_centerInParent="true"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_below="@id/ninethview"
-                       android:id="@+id/seventeen"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Microcontroller"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/seventeen"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/eighteen"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Lab;"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/eighteen"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Circuits Lab"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-
-
-
-           </RelativeLayout>
-
-
-           <RelativeLayout
-               android:layout_marginTop="10dp"
-               android:layout_marginBottom="30dp"
-               android:layout_below="@id/third_layout"
-               android:id="@+id/fourth_layout"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-               <android.support.v7.widget.CardView
-                   android:layout_width="110dp"
-                   android:layout_marginTop="5dp"
-                   android:layout_marginStart="10dp"
-                   android:layout_alignParentStart="true"
-                   android:layout_height="140dp">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s6come_go"
-                   android:id="@+id/s6come"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#66BB6A"
-                   android:tint="#ffffff"
-                   android:src="@drawable/comicon"/>
-                   <View
-                       android:layout_below="@id/s6come"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/tenthview"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:text="Communication"
-                       android:layout_below="@id/tenthview"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/ninteen"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/ninteen"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/twenty"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Engineering"
-                       android:textSize="12sp"/>
-
-                   <TextView
-                       android:text="Lab"
-                       android:layout_below="@id/twenty"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-               <android.support.v7.widget.CardView
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:layout_marginStart="10dp"
-                   android:layout_width="110dp"
-                   android:layout_height="140dp"
-                   tools:ignore="TooManyViews">
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
-
-
-
-
-
-               <at.markushi.ui.CircleButton
-
-                   android:layout_marginTop="5dp"
-                   android:layout_centerHorizontal="true"
-                   android:onClick="s7coms_go"
-                   android:id="@+id/s7coms"
-                   android:layout_width="70dp"
-                   android:layout_height="70dp"
-                   android:padding="20dp"
-                   app:cb_color="#9CCC65"
-                   android:tint="#ffffff"
-                   android:src="@drawable/cosicon"/>
-                   <View
-                       android:layout_below="@id/s7coms"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/eleventhview"
-                       android:layout_margin="5dp"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="#D7CCC8" />
-                   <TextView
-                       android:layout_below="@id/eleventhview"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/twentyone"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Communication"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/twentyone"
-                       android:layout_centerInParent="true"
-                       android:id="@+id/twentytwo"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="System"
-                       android:textSize="12sp"/>
-                   <TextView
-                       android:layout_below="@id/twentytwo"
-                       android:layout_centerInParent="true"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Lab"
-                       android:textSize="12sp"/>
-               </RelativeLayout>
-               </android.support.v7.widget.CardView>
-
-
-
-           </RelativeLayout>
-       </RelativeLayout>
-
-    </RelativeLayout>
-</ScrollView>
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="5dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="@dimen/Card_height">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <at.markushi.ui.CircleButton
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="course_popup"
+                                android:id="@+id/button"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#AD1457"
+                                android:tint="#ffffff"
+                                android:src="@drawable/addicon"/>
+                            <View
+
+                                android:layout_centerInParent="true"
+                                android:id="@+id/firstview"
+                                android:layout_below="@id/button"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+
+                                android:layout_centerInParent="true"
+                                android:id="@+id/firsttext"
+                                android:layout_below="@id/firstview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                            <TextView
+
+                                android:layout_centerInParent="true"
+                                android:layout_below="@id/firsttext"
+                                android:id="@+id/secondtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Courses"
+                                android:textSize="12sp"/>
+
+                            <TextView
+
+                                android:layout_centerInParent="true"
+                                android:layout_below="@id/secondtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <at.markushi.ui.CircleButton
+
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s1bec_go"
+                                android:id="@+id/s1bec"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                app:cb_color="#EC407A"
+                                android:tint="#ffffff"
+                                android:padding="20dp"
+                                android:src="@drawable/becicon"/>
+
+                            <View
+                                android:id="@+id/secondview"
+                                android:layout_below="@id/s1bec"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:id="@+id/thirdtext"
+                                android:layout_below="@id/secondview"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Basic"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/thirdtext"
+                                android:id="@+id/fourthtext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electronics"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/fourthtext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Workshop"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s3ecc_go"
+                                android:id="@+id/s3ecc"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#AB47BC"
+                                android:tint="#ffffff"
+                                android:src="@drawable/eccicon"/>
+                            <View
+                                android:id="@+id/thirdview"
+                                android:layout_below="@id/s3ecc"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_below="@id/thirdview"
+                                android:id="@+id/fifthtext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electronics"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/fifthtext"
+                                android:id="@+id/sixthtext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Devices &amp;"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/sixthtext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Circuits Lab"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s3eda_go"
+                                android:id="@+id/s3eda"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#7E57C2"
+                                android:tint="#ffffff"
+                                android:src="@drawable/edaicon"/>
+                            <View
+                                android:id="@+id/fourthview"
+                                android:layout_below="@id/s3eda"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_below="@id/fourthview"
+                                android:id="@+id/seventhtext"
+                                android:text="Electronics"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/seventhtext"
+                                android:id="@+id/eighttext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Design"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:text="Automation Lab"
+                                android:layout_below="@id/eighttext"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s4aic_go"
+                                android:id="@+id/s4aic"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#5C6BC0"
+                                android:tint="#ffffff"
+                                android:src="@drawable/aicicon"/>
+
+                            <View
+                                android:id="@+id/fifthview"
+                                android:layout_below="@id/s4aic"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/nine"
+                                android:layout_below="@id/fifthview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Analog"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/ten"
+                                android:layout_below="@id/nine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Integrated"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/ten"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Circuits Lab"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <at.markushi.ui.CircleButton
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s4lcd_go"
+                                android:id="@+id/s4lcd"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#42A5F5"
+                                android:tint="#ffffff"
+                                android:src="@drawable/lcdicon"/>
+
+                            <View
+                                android:layout_below="@id/s4lcd"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/sixthview"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_below="@id/sixthview"
+                                android:id="@+id/eleven"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Logic"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/eleven"
+                                android:id="@+id/twelve"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Circuit"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/twelve"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Design Lab"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s5dsp_go"
+                                android:id="@+id/s5dsp"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#29B6F6"
+                                android:tint="#ffffff"
+                                android:src="@drawable/dspicon"/>
+                            <View
+                                android:layout_centerInParent="true"
+                                android:layout_below="@id/s5dsp"
+                                android:id="@+id/seventhview"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:text="Digital"
+                                android:layout_below="@id/seventhview"
+                                android:id="@+id/thirteen"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/thirteen"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/fourteen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Signal"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:text="Processing Lab"
+                                android:layout_below="@id/fourteen"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s5pow_go"
+                                android:id="@+id/s5pow"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#26C6DA"
+                                android:tint="#ffffff"
+                                android:src="@drawable/peiicon"/>
+                            <View
+                                android:layout_below="@id/s5pow"
+                                android:id="@+id/eightview"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_below="@id/eightview"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/fifteen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/fifteen"
+                                android:id="@+id/sixteen"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electronics &amp;"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/sixteen"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Instrumentation Lab"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s6mic_go"
+                                android:id="@+id/s6mic"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#26A69A"
+                                android:tint="#ffffff"
+                                android:src="@drawable/micicon"/>
+                            <View
+                                android:layout_below="@id/s6mic"
+                                android:id="@+id/ninethview"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_below="@id/ninethview"
+                                android:id="@+id/seventeen"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Microcontroller"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/seventeen"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/eighteen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lab"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s6come_go"
+                                android:id="@+id/s6come"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#66BB6A"
+                                android:tint="#ffffff"
+                                android:src="@drawable/comicon"/>
+                            <View
+                                android:layout_below="@id/s6come"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/tenthview"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:text="Communication"
+                                android:layout_below="@id/tenthview"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/ninteen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/ninteen"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/twenty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Engineering"
+                                android:textSize="12sp"
+                                tools:ignore="TooManyViews" />
+
+                            <TextView
+                                android:text="Lab"
+                                android:layout_below="@id/twenty"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        tools:ignore="TooManyViews">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+
+
+                            <at.markushi.ui.CircleButton
+
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="s7coms_go"
+                                android:id="@+id/s7coms"
+                                android:layout_width="@dimen/circular_button"
+                                android:layout_height="@dimen/circular_button"
+                                android:padding="20dp"
+                                app:cb_color="#9CCC65"
+                                android:tint="#ffffff"
+                                android:src="@drawable/cosicon"/>
+                            <View
+                                android:layout_below="@id/s7coms"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/eleventhview"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#D7CCC8" />
+                            <TextView
+                                android:layout_below="@id/eleventhview"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/twentyone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Communication"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/twentyone"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/twentytwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="System"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_below="@id/twentytwo"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lab"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

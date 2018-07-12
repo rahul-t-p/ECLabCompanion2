@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,735 +8,765 @@
     android:layout_width="match_parent"
     tools:context="tcube.eclabcompanion.Experiment">
     <!--Since scroll view can have only one child we wrap entire view into a relative layout-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/corse_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar"
+            android:minHeight="@dimen/toolbar"
+            android:id="@+id/course_toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
 
-
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/bec_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#EC407A">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/becicon"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-
-
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/bec_window"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#EC407A">
+                        <ImageView
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/becicon"
+                            android:contentDescription=""
+                            tools:ignore="ContentDescription" />
 
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/Course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Basic Electronics Workshop"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_1_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/ecc_window"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/text1"
+                <LinearLayout
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#AB47BC">
+                        <ImageView
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/eccicon"
+                            android:contentDescription=""
+                            tools:ignore="ContentDescription" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="@dimen/Course_name"
+                                android:textColor="#000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electronic Devices &amp; Circuits Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_2_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/eda_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
                     android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Basic Electronics Workshop"/>
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#7E57C2">
+                        <ImageView
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/edaicon"
+                            tools:ignore="ContentDescription" />
 
-            </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="5dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/Course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electronic Design Automation Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_3_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/aic_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageButton
-                        android:layout_marginTop="1dp"
-                        android:tint="#ffffff"
-                        android:id="@+id/course_1_available"
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:contentDescription=""
-                        tools:ignore="ContentDescription" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#5C6BC0">
+                        <ImageView
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/aicicon"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="5dp"
+                                android:textSize="@dimen/Course_name"
+                                android:textColor="#000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Analog Integrated Circuits Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_4_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/ecc_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#AB47BC">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/eccicon"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/lcd_window"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Electronic Devices &amp; Circuits Lab"/>
-            </LinearLayout>
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageButton
-                        android:layout_marginTop="1dp"
-                        android:tint="#ffffff"
-                        android:id="@+id/course_2_available"
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:contentDescription=""
-                        tools:ignore="ContentDescription" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#42A5F5">
+                        <ImageView
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/lcdicon"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/Course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Logic Circuit Design Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:id="@+id/course_5_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/eda_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#7E57C2">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/edaicon"
-                    tools:ignore="ContentDescription" />
-
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/dsp_window"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginStart="5dp"
-                    android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Electronic Design Automation Lab"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_marginTop="1dp"
-                    android:tint="#ffffff"
-                    android:id="@+id/course_3_available"
-                    android:layout_gravity="center"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-            </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/aic_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#5C6BC0">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/aicicon"
-                    tools:ignore="ContentDescription" />
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Analog Integrated Circuits Lab"/>
-            </LinearLayout>
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageButton
-                        android:layout_marginTop="1dp"
-                        android:tint="#ffffff"
-                        android:id="@+id/course_4_available"
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:contentDescription=""
-                        tools:ignore="ContentDescription" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#29B6F6">
+                        <ImageView
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dspicon"
+                            tools:ignore="ContentDescription" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="@dimen/Course_name"
+                                android:textColor="#000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Digital Signal Processing Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_6_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/lcd_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#42A5F5">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/lcdicon"
-                    tools:ignore="ContentDescription" />
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/pei_window"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Logic Circuit Design Lab"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_marginTop="1dp"
-                    android:id="@+id/course_5_available"
-                    android:layout_gravity="center"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-            </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/dsp_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#29B6F6">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/dspicon"
-                    tools:ignore="ContentDescription" />
-
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Digital Signal Processing Lab"/>
-            </LinearLayout>
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageButton
-                        android:layout_marginTop="1dp"
-                        android:tint="#ffffff"
-                        android:id="@+id/course_6_available"
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:contentDescription=""
-                        tools:ignore="ContentDescription" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#26C6DA">
+                        <ImageView
+                            android:contentDescription="imageView"
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/peiicon"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/Course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power Electronics &amp; Instrumentation Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_7_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/pei_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#26C6DA">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/peiicon"/>
+            </android.support.v7.widget.CardView>
 
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/mic_window"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Power Electronics &amp; Instrumentation Lab"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_marginTop="1dp"
-                    android:tint="#ffffff"
-                    android:id="@+id/course_7_available"
-                    android:layout_gravity="center"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-            </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/mic_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#26A69A">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/micicon"/>
-
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Microcontroller Lab"/>
-            </LinearLayout>
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageButton
-                        android:layout_marginTop="1dp"
-                        android:tint="#ffffff"
-                        android:id="@+id/course_8_available"
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:contentDescription=""
-                        tools:ignore="ContentDescription" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#26A69A">
+                        <ImageView
+                            android:contentDescription="imageView"
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/micicon"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="@dimen/Course_name"
+                                android:textColor="#000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Microcontroller Lab"
+                                tools:ignore="TooManyViews" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_8_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/com_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#66BB6A">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/comicon"/>
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/com_window"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
+                <LinearLayout
                     android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Communication Engineering Lab"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_marginTop="1dp"
-                    android:tint="#ffffff"
-                    android:id="@+id/course_9_available"
-                    android:layout_gravity="center"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-            </LinearLayout>
-        </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_marginBottom="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape"
-            android:id="@+id/cos_window"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="5dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#66BB6A">
+                        <ImageView
+                            android:contentDescription="image_View"
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/comicon"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/Course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Communication Engineering Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_9_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:id="@+id/cos_window"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#9CCC65">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:tint="#ffffff"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/cosicon"/>
-
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:baselineAligned="false"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="vertical"
-                android:background="#ffffff"
-                android:layout_width="0dp"
-                android:layout_weight="7"
-                android:layout_height="wrap_content">
-                <TextView
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginStart="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Course"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Communication Systems Lab"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_marginTop="1dp"
-                    android:tint="#ffffff"
-                    android:id="@+id/course_10_available"
-                    android:layout_gravity="center"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:contentDescription=""
-                    tools:ignore="ContentDescription" />
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Course_Card_height"
+                        android:background="#9CCC65">
+                        <ImageView
+                            android:contentDescription="image_View"
+                            android:layout_width="@dimen/icon"
+                            android:layout_height="@dimen/icon"
+                            android:tint="#ffffff"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/cosicon"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Course"
+                                android:textSize="@dimen/Course_name"/>
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="@dimen/Course_name"
+                                android:textColor="#000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Communication Systems Lab"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_marginTop="1dp"
+                                android:tint="#ffffff"
+                                android:id="@+id/course_10_available"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/Action_button"
+                                android:layout_height="@dimen/Action_button"
+                                android:contentDescription=""
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
         </LinearLayout>
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
 
 
 
-    </LinearLayout>
-</ScrollView>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
