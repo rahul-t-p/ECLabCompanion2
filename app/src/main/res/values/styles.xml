@@ -11,27 +11,20 @@
         <item name="layoutcolor">#0D47A1</item>
         <item name="textcolor">#ffffff</item>
 
-
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
-
-
-
-
-
-
+<!--
     <style name="NightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+
         <item name="colorPrimary">#212121</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#212121</item>
         <item name="backgroundcolor">#000000</item>
         <item name="layoutcolor">#424242</item>
         <item name="textcolor">#ffffff</item>
-    </style>
+    </style>        -->
 </resources>

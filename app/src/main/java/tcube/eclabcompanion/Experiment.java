@@ -29,10 +29,6 @@ public class Experiment extends AppCompatActivity {
 
     }
 
-
-
-
-
     @Override
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {

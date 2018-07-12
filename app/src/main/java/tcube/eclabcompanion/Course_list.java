@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -332,22 +333,30 @@ public class Course_list extends AppCompatActivity {
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void delete_s1bec() { //Delete the downloaded folder .. make sure zip is deleted before that
-        File Obb = getObbDir();
-        File file = new File(Obb, "s1bec");
-        if( file.exists() ) {
-            File[] files = file.listFiles();
-            for(int i=0; i<files.length; i++) {
-                files[i].delete();
-            }
-        }
-        file.delete();
-
-        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getObbDir();
+                        File file = new File(Obb, "s1bec");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                files[j].delete();
+                            }
+                        }
+                        file.delete();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        file_check();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
         //setContentView(R.layout.activity_main);
         //setTitle("EC Lab Companion");
-        file_check();
         //file_checkto();
-        screen_flag = 1; //Get back to the root view
+        //screen_flag = 1; //Get back to the root view
     }
 
     public void delete_s3ecc() {
@@ -445,7 +454,7 @@ public class Course_list extends AppCompatActivity {
                 mProgressDialog = new ProgressDialog(this);
                 mProgressDialog.setMessage("Downloading Course ..");
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                mProgressDialog.setCancelable(true);
+                mProgressDialog.setCancelable(false);
                 mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
                     @Override //This function is problematic because even if the download fails, it shows successful.
                     public void onCancel(DialogInterface dialog) {
