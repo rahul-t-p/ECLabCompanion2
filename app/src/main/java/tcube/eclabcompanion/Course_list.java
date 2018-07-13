@@ -394,7 +394,7 @@ public class Course_list extends AppCompatActivity {
     public void delete_s7coms() {
         //To be added Later
     }
-    public void unzip(String zipFile,String location) throws IOException {
+    public void unzip(String zipFile,String location) {
         int BUFFER_SIZE = 1024;
         byte[] buffer = new byte[BUFFER_SIZE];
         try {
@@ -407,7 +407,7 @@ public class Course_list extends AppCompatActivity {
             }
             ZipInputStream zin = new ZipInputStream(new BufferedInputStream(new FileInputStream(zipFile), BUFFER_SIZE));
             try {
-                ZipEntry ze = null;
+                ZipEntry ze;
                 while ((ze = zin.getNextEntry()) != null) {
                     String path = location + ze.getName();
                     File unzipFile = new File(path);

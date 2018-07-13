@@ -11,7 +11,8 @@
     </item>
     <item
          android:id="@android:id/progress">
-        <rotate android:fromDegrees="0"
+        <rotate
+            android:fromDegrees="0"
             android:toDegrees="360">
             <shape
                 android:innerRadiusRatio="1000"
@@ -23,7 +24,6 @@
                     android:startColor="#2962FF"
                     android:type="sweep"
                     android:useLevel="true"/>
-
             </shape>
         </rotate>
     </item>

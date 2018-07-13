@@ -26,7 +26,6 @@
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:layout_centerInParent="true"/>
-
         </RelativeLayout>
     </LinearLayout>
 
@@ -218,16 +217,12 @@
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Circuits Lab"
+                                android:text="Circuits"
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
-
-
-
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:padding="5dp"
                     android:weightSum="3"
@@ -280,7 +275,7 @@
                                 android:textSize="12sp"/>
 
                             <TextView
-                                android:text="Automation Lab"
+                                android:text="Automation"
                                 android:layout_below="@id/eighttext"
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
@@ -288,6 +283,7 @@
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
                     <android.support.v7.widget.CardView
                         android:layout_marginStart="5dp"
                         android:layout_width="0dp"
@@ -296,9 +292,6 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
-
-
                             <at.markushi.ui.CircleButton
 
                                 android:layout_marginTop="5dp"
@@ -341,10 +334,11 @@
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Circuits Lab"
+                                android:text="Circuits"
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
                     <android.support.v7.widget.CardView
                         android:layout_marginStart="5dp"
                         android:layout_width="0dp"
@@ -388,30 +382,19 @@
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Circuit"
+                                android:text="Circuits"
                                 android:textSize="12sp"/>
                             <TextView
                                 android:layout_below="@id/twelve"
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Design Lab"
+                                android:text="Design"
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
-
-
-
-
-
-
-
-
-
-
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:padding="5dp"
                     android:weightSum="3"
@@ -425,9 +408,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
                             <at.markushi.ui.CircleButton
-
                                 android:layout_marginTop="5dp"
                                 android:layout_centerHorizontal="true"
                                 android:onClick="s5dsp_go"
@@ -464,7 +445,7 @@
                                 android:textSize="12sp"/>
 
                             <TextView
-                                android:text="Processing Lab"
+                                android:text="Processing"
                                 android:layout_below="@id/fourteen"
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
@@ -472,6 +453,7 @@
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
                     <android.support.v7.widget.CardView
                         android:layout_marginStart="5dp"
                         android:layout_width="0dp"
@@ -480,10 +462,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
-
                             <at.markushi.ui.CircleButton
-
                                 android:layout_marginTop="5dp"
                                 android:layout_centerHorizontal="true"
                                 android:onClick="s5pow_go"
@@ -523,10 +502,11 @@
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Instrumentation Lab"
+                                android:text="Instrumentation"
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
                     <android.support.v7.widget.CardView
                         android:layout_marginStart="5dp"
                         android:layout_width="0dp"
@@ -535,10 +515,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
-
                             <at.markushi.ui.CircleButton
-
                                 android:layout_marginTop="5dp"
                                 android:layout_centerHorizontal="true"
                                 android:onClick="s6mic_go"
@@ -575,19 +552,14 @@
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
-
-
-
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:padding="5dp"
                     android:weightSum="3"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
 
                     <android.support.v7.widget.CardView
                         android:layout_width="0dp"
@@ -596,10 +568,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
-
                             <at.markushi.ui.CircleButton
-
                                 android:layout_marginTop="5dp"
                                 android:layout_centerHorizontal="true"
                                 android:onClick="s6come_go"
@@ -637,7 +606,7 @@
                                 tools:ignore="TooManyViews" />
 
                             <TextView
-                                android:text="Lab"
+                                android:text=" "
                                 android:layout_below="@id/twenty"
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
@@ -645,6 +614,7 @@
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
                     <android.support.v7.widget.CardView
                         android:layout_marginStart="5dp"
                         android:layout_weight="1"
@@ -654,13 +624,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
-
-
-
-
                             <at.markushi.ui.CircleButton
-
                                 android:layout_marginTop="5dp"
                                 android:layout_centerHorizontal="true"
                                 android:onClick="s7coms_go"
@@ -700,22 +664,17 @@
                                 android:layout_centerInParent="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Lab"
+                                android:text=" "
                                 android:textSize="12sp"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
-
-
 
                 </LinearLayout>
 
             </LinearLayout>
 
-
-
         </ScrollView>
 
     </LinearLayout>
-
 
 </LinearLayout>

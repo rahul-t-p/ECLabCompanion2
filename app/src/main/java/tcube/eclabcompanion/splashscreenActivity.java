@@ -20,6 +20,6 @@ public class splashscreenActivity extends Activity {
                 startActivity(intent);
                 finish();
             }
-        },3400);
+        },1000);
     }
 }
