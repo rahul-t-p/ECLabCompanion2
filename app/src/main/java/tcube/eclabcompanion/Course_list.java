@@ -15,7 +15,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.io.BufferedInputStream;
@@ -23,7 +22,6 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
@@ -34,7 +32,7 @@ import java.util.zip.ZipInputStream;
 public class Course_list extends AppCompatActivity {
     Toolbar Course_toolbar;
     int screen_flag; //Flag to move back and forth screens
-    RelativeLayout.LayoutParams lp; //Used to dynamically set the courses.
+    //RelativeLayout.LayoutParams lp; //Used to dynamically set the courses.
     public static final int DIALOG_DOWNLOAD_PROGRESS = 0;
     private ProgressDialog mProgressDialog;
     String source,destin;
@@ -477,7 +475,7 @@ public class Course_list extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(getBaseContext(), "Preparing for Download", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getBaseContext(), "Preparing for Download", Toast.LENGTH_SHORT).show();
             showDialog(DIALOG_DOWNLOAD_PROGRESS);
         }
 
