@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s6mpmc_xml"
+    android:background="?attr/backgroundcolor"
+    tools:context="tcube.eclabcompanion.Experiment_mpmc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/s6mpmc_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar"
+            android:minHeight="@dimen/toolbar"
+            android:id="@+id/s6mpmc_toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp1"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1 . Data transfer between specified memory locations."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp2"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp1"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="2 . Largest/smallest from a series."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp3"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp2"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="3 . Sorting of data."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp4"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp3"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="4 . Arithmetic operations on 8 and 16 bit data"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp5"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp4"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="5 . Sum of a series of 8 bit data"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp6"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp5"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="6 . Multiplication by shift and add method"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp7"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp6"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="7 . Square,cube and square root of 8 bit data"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp8"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp7"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="8 . Matrix addition"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp9"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp8"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="9 . LCM and HCF of two 8 bit numbers"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp10"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp9"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="10 . Code conversion – Hex to Decimal and ASCII to Decimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp11"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp10"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="11 . Time delay generation and relay interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp12"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp11"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="12 . Display and keyboard interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp13"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp12"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="13 . ADC interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp14"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp13"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="14 . DAC interface with wave form generation"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp15"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp14"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="15 . Stepper motor and DC motor interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp16"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp15"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="16 . Realization of Boolean expression through port"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp17"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp16"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="17 . Elevator interfacing"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp18"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp17"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="18 . Relay control"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp19"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp18"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="19 . Distance measurement"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp20"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp19"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="20 . Temperature measurement"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp21"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp20"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="21 . Txr-Rxr interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp22"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp21"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="22 . Alphanumeric LCD display interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp23"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp22"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="23 . Simple project work including multiple interfaces"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

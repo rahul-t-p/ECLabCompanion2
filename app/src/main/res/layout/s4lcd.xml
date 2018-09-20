@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s4lcd_xml"
+    android:background="?attr/backgroundcolor"
+    tools:context="tcube.eclabcompanion.Experiment_lcd">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/s4lcd_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar"
+            android:minHeight="@dimen/toolbar"
+            android:id="@+id/s4lcd_toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp0"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1 . Introduction to the course."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp1"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp0"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1 . Realization of functions using basic and universal gates."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp2"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp1"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="2 . Design and Realization of half /full adder and subtractor using basic gates and universal
+gates."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp3"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp2"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="3 . 4 bit adder/subtractor and BCD adder using 7483."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp4"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp3"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="4 . 2/3 bit binary comparator."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp5"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp4"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="5 . Binary to Gray and Gray to Binary converters."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp6"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp5"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="6 . Study of Flip Flops: S-R, D, T, JK and Master Slave JK FF using NAND gates"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp7"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp6"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="7 . Asynchronous Counter: Realization of 4-bit counter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp8"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp7"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="8 . Asynchronous Counter: Realization of Mod-N counters."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp9"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp8"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="9 . Asynchronous Counter:3 bit up/down counter."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp10"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp9"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="10 . Synchronous Counter: Realization of 4-bit up/down counter."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp11"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp10"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="11 . Synchronous Counter: Realization of Mod-N counters."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp12"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp11"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="12 . Synchronous Counter:3 bit up/down counter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp13"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp12"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="13 . Shift Register: Study of shift right, SIPO, SISO, PIPO, PISO (using FF and 7495)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp14"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp13"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="14 . Ring counter and Johnson Counter. (using FF and 7495)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp15"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp14"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="15 . Realization of counters using IC’s (7490, 7492, 7493)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp16"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp15"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="16 . Multiplexers and De-multiplexers using gates and ICs. (74150, 74154)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp17"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp16"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="17 . Realization of combinational circuits using MUX and DEMUX."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp18"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp17"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="18 . Random sequence generator."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp19"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp18"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="19 . LED Display: Use of BCD to 7 Segment decoder / driver chip to drive LED display"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s4lcdexp20"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s4lcdexp19"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s4lcd_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="20 . Static and Dynamic Characteristic of NAND gate (MOS/TTL)"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
