@@ -189,14 +189,14 @@ public class Course_list extends AppCompatActivity {
                 }
             });
         }
-        fileCheck = new File(Obb, "s6mic");
+        fileCheck = new File(Obb, "s6mpmc");
         course = (ImageButton) findViewById(R.id.course_8_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    delete_s6mic();
+                    delete_s6mpmc();
                 }
             });
         } else {
@@ -204,7 +204,7 @@ public class Course_list extends AppCompatActivity {
             course.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    fetch_s6mic();
+                    fetch_s6mpmc();
                 }
             });
         }
@@ -281,6 +281,7 @@ public class Course_list extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
     }
+
     public void fetch_s1bec() { //Network Thread Creator to fetch the course.
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
@@ -307,7 +308,18 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s4lcd() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        //Network Thread Creator to fetch the course.
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s4lcd.zip";
+            destin = "s4lcd";
+            String url = "https://www.dropbox.com/s/z911u37efkm0cfz/s4lcd.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
+        //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
     }
 
     public void fetch_s5dsp() {
@@ -318,8 +330,19 @@ public class Course_list extends AppCompatActivity {
         Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
     }
 
-    public void fetch_s6mic() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+    public void fetch_s6mpmc() {
+        //Network Thread Creator to fetch the course.
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s6mpmc.zip";
+            destin = "s6mpmc";
+            String url = "https://www.dropbox.com/s/jnmdkjlg77irjbq/s6mpmc.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
+        //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
     }
 
     public void fetch_s6come() {
@@ -370,7 +393,26 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s4lcd() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getObbDir();
+                        File file = new File(Obb, "s4lcd");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                files[j].delete();
+                            }
+                        }
+                        file.delete();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        file_check();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s5dsp() {
@@ -381,8 +423,31 @@ public class Course_list extends AppCompatActivity {
         //To be added Later
     }
 
-    public void delete_s6mic() {
-        //To be added Later
+    public void delete_s6mpmc() {
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getObbDir();
+                        File file = new File(Obb, "s1bec");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                files[j].delete();
+                            }
+                        }
+                        file.delete();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        file_check();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+        //setContentView(R.layout.activity_main);
+        //setTitle("EC Lab Companion");
+        //file_checkto();
+        //screen_flag = 1; //Get back to the root view
     }
 
     public void delete_s6come() {
@@ -440,11 +505,15 @@ public class Course_list extends AppCompatActivity {
                 }
             } finally {
                 zin.close();
+                File Obb = getObbDir();
+                File file = new File(Obb, zipFile);
+                file.delete();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -470,12 +539,13 @@ public class Course_list extends AppCompatActivity {
                 return null;
         }
     }
+
     private class DownloadFileAsync extends AsyncTask<String, String, String> {
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            //Toast.makeText(getBaseContext(), "Preparing for Download", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Checking files for download", Toast.LENGTH_SHORT).show();
             showDialog(DIALOG_DOWNLOAD_PROGRESS);
         }
 

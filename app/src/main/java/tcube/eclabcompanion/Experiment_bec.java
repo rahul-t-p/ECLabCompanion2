@@ -11,7 +11,7 @@ import android.webkit.WebView;
 
 import java.io.File;
 
-public class Experiment extends AppCompatActivity {
+public class Experiment_bec extends AppCompatActivity {
     int screen_flag;
     Toolbar s1bec_toolbar;
     MenuItem menuItem;//Flag to determine current view.
@@ -25,8 +25,6 @@ public class Experiment extends AppCompatActivity {
         setSupportActionBar(s1bec_toolbar);
         getSupportActionBar().setTitle("Basic Electronics Workshop");
         s1bec_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
-
-
     }
 
     @Override
@@ -161,7 +159,7 @@ public class Experiment extends AppCompatActivity {
     }
 
     public void restartApp(){
-        Intent intent=new Intent(getApplicationContext(),Experiment.class);
+        Intent intent=new Intent(getApplicationContext(),Experiment_bec.class);
         startActivity(intent);
 
     }

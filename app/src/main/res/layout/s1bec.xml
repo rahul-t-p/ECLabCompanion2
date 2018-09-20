@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/s1bec_xml"
     android:background="?attr/backgroundcolor"
-    tools:context="tcube.eclabcompanion.Experiment">
+    tools:context="tcube.eclabcompanion.Experiment_bec">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/s1bec_appbar"
         android:layout_width="match_parent"

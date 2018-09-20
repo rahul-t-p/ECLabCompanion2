@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     Bundle bundle;
     CircleButton course_icon,add_button;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-
     public void course_popup(View view) {
         Intent Course_intent=new Intent(MainActivity.this,Course_list.class);
         Course_intent.putExtras(bundle);
@@ -89,14 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
-
     public void s1bec_go(View view){
         File Obb = getObbDir();
         File file = new File(Obb, "s1bec");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
+            Intent intent = new Intent(this, Experiment_bec.class);
             startActivity(intent); //Starts next activity for the particular course.
         }
         else {
@@ -109,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s3ecc");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_ecc.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -122,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s3eda");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_eda.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -135,8 +130,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s4aic");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_aic.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -148,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s4lcd");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
+            Intent intent = new Intent(this, Experiment_lcd.class);
             startActivity(intent); //Starts next activity for the particular course.
         }
         else {
@@ -161,8 +156,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s5dsp");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_dsp.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -174,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s5pow");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_pow.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -183,11 +178,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void s6mic_go(View view){
+    public void s6mpmc_go(View view){
         File Obb = getObbDir();
-        File file = new File(Obb, "s6mic");
+        File file = new File(Obb, "s6mpmc");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
+            Intent intent = new Intent(this, Experiment_mpmc.class);
             startActivity(intent); //Starts next activity for the particular course.
         }
         else {
@@ -200,8 +195,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s6come");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_come.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -213,32 +208,35 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s7coms");
         if( file.exists()) {
-            Intent intent = new Intent(this, Experiment.class);
-            startActivity(intent); //Starts next activity for the particular course.
+            //Intent intent = new Intent(this, Experiment_coms.class);
+            //startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
             Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
         }
     }
+
     public void file_checkto() { //This function dynamically sets the course images based on the presence of corresponding folder.
         course_icon = (CircleButton) findViewById(R.id.s1bec);
         add_button= (CircleButton) findViewById(R.id.button);
 
         File Obb = getObbDir();
+
         File fileCheck = new File (Obb,"s1bec"); // Checking for downloaded files
         if (fileCheck.isDirectory()) { //If Course is present ..
             //Make the button visible and adjust its layout params.
-            course_icon.setColor(Color.parseColor("#AD1457"));
+            course_icon.setColor(Color.parseColor("#EC407A"));
         }
         else { //If course is not present ..
             course_icon.setColor(getResources().getColor(R.color.colorBG));
             // Make the button invisible.
         }
         course_icon = (CircleButton) findViewById(R.id.s3eda); //Same process is repeated for all courses.
+
         fileCheck = new File (Obb,"s3eda");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#7E57C2"));
         }
         else {
 
@@ -246,91 +244,77 @@ public class MainActivity extends AppCompatActivity {
 
         }
         course_icon = (CircleButton) findViewById(R.id.s3ecc);
+
         fileCheck = new File (Obb,"s3ecc");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#AB47BC"));
         }
         else {
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s4aic);
+
         fileCheck = new File (Obb,"s4aic");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#5C6BC0"));
         }
         else {
-
-
-             course_icon.setColor(getResources().getColor(R.color.colorBG));
-
+            course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s4lcd);
+
         fileCheck = new File (Obb,"s4lcd");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#42A5F5"));
         }
         else {
-
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s5dsp);
+
         fileCheck = new File (Obb,"s5dsp");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#29B6F6"));
         }
         else {
-
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s5pow);
+
         fileCheck = new File (Obb,"s5pow");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#26C6DA"));
         }
         else {
-
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s6mic);
-        fileCheck = new File (Obb,"s6mic");
-        if (fileCheck.isDirectory()) {
 
+        fileCheck = new File (Obb,"s6mpmc");
+        if (fileCheck.isDirectory()) {
+            course_icon.setColor(Color.parseColor("#26A69A"));
         }
         else {
-
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s6come);
+
         fileCheck = new File (Obb,"s6come");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#66BB6A"));
         }
         else {
-
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
         course_icon = (CircleButton) findViewById(R.id.s7coms);
+
         fileCheck = new File (Obb,"s7coms");
         if (fileCheck.isDirectory()) {
-
+            course_icon.setColor(Color.parseColor("#9CCC65"));
         }
         else {
-
-
             course_icon.setColor(getResources().getColor(R.color.colorBG));
-
         }
     }
-
-
-
-
-
 
 }

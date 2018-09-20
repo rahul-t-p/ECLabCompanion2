@@ -26,10 +26,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Experiment"
+            android:name=".Experiment_bec"
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".Experiment_lcd"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".Experiment_mpmc"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
         <activity android:name=".splashscreenActivity"
                   android:theme="@style/AppTheme"
                   android:screenOrientation="portrait">
