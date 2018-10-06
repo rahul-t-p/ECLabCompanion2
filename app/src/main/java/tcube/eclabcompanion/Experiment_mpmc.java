@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
-
 import java.io.File;
 
 public class Experiment_mpmc extends AppCompatActivity {
@@ -26,8 +25,6 @@ public class Experiment_mpmc extends AppCompatActivity {
         setSupportActionBar(s6mpmc_toolbar);
         getSupportActionBar().setTitle("Microcontroller Lab");
         s6mpmc_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
-
-
     }
 
     @Override

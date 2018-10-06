@@ -304,7 +304,18 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s4aic() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        //Network Thread Creator to fetch the course.
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s4aic.zip";
+            destin = "s4aic";
+            String url = "https://www.dropbox.com/s/z911u37efkm0cfz/s4lcd.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
+        //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
     }
 
     public void fetch_s4lcd() {
@@ -389,7 +400,26 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s4aic() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getObbDir();
+                        File file = new File(Obb, "s4aic");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                files[j].delete();
+                            }
+                        }
+                        file.delete();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        file_check();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s4lcd() {

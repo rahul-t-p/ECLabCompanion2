@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1 . Introduction to the course."/>
+                    android:text="Introduction to the Course."/>
             </LinearLayout>
 
             <LinearLayout
