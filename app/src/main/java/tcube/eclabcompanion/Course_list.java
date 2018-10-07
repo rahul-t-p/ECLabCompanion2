@@ -52,6 +52,7 @@ public class Course_list extends AppCompatActivity {
         Course_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
 
         }
+
     public void file_check() {
         course = (ImageButton) findViewById(R.id.course_1_available);
         File Obb = getObbDir();
@@ -334,7 +335,18 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s5dsp() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        //Network Thread Creator to fetch the course.
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s5dsp.zip";
+            destin = "s5dsp";
+            String url = "https://www.dropbox.com/s/5zsrzqnqlzmf50j/s5dsp.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
+        //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
     }
 
     public void fetch_s5pow() {
@@ -371,24 +383,27 @@ public class Course_list extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         File Obb = getObbDir();
+                        boolean log;
                         File file = new File(Obb, "s1bec");
                         if( file.exists() ) {
                             File[] files = file.listFiles();
                             for(int j=0; j<files.length; j++) {
-                                files[j].delete();
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
                             }
                         }
-                        file.delete();
-                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        log = file.delete();
                         file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton("No", null)
                 .show();
-        //setContentView(R.layout.activity_main);
-        //setTitle("EC Lab Companion");
-        //file_checkto();
-        //screen_flag = 1; //Get back to the root view
     }
 
     public void delete_s3ecc() {
@@ -406,16 +421,23 @@ public class Course_list extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         File Obb = getObbDir();
+                        boolean log;
                         File file = new File(Obb, "s4aic");
                         if( file.exists() ) {
                             File[] files = file.listFiles();
                             for(int j=0; j<files.length; j++) {
-                                files[j].delete();
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
                             }
                         }
-                        file.delete();
-                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        log = file.delete();
                         file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton("No", null)
@@ -429,16 +451,23 @@ public class Course_list extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         File Obb = getObbDir();
+                        boolean log;
                         File file = new File(Obb, "s4lcd");
                         if( file.exists() ) {
                             File[] files = file.listFiles();
                             for(int j=0; j<files.length; j++) {
-                                files[j].delete();
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
                             }
                         }
-                        file.delete();
-                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        log = file.delete();
                         file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton("No", null)
@@ -446,7 +475,33 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s5dsp() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getObbDir();
+                        boolean log;
+                        File file = new File(Obb, "s5dsp");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
+                            }
+                        }
+                        log = file.delete();
+                        file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s5pow() {
@@ -460,24 +515,27 @@ public class Course_list extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         File Obb = getObbDir();
-                        File file = new File(Obb, "s1bec");
+                        boolean log;
+                        File file = new File(Obb, "s6mpmc");
                         if( file.exists() ) {
                             File[] files = file.listFiles();
                             for(int j=0; j<files.length; j++) {
-                                files[j].delete();
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
                             }
                         }
-                        file.delete();
-                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        log = file.delete();
                         file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton("No", null)
                 .show();
-        //setContentView(R.layout.activity_main);
-        //setTitle("EC Lab Companion");
-        //file_checkto();
-        //screen_flag = 1; //Get back to the root view
     }
 
     public void delete_s6come() {
@@ -487,6 +545,7 @@ public class Course_list extends AppCompatActivity {
     public void delete_s7coms() {
         //To be added Later
     }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void unzip(String zipFile,String location) {
         int BUFFER_SIZE = 1024;
         byte[] buffer = new byte[BUFFER_SIZE];
@@ -535,8 +594,7 @@ public class Course_list extends AppCompatActivity {
                 }
             } finally {
                 zin.close();
-                File Obb = getObbDir();
-                File file = new File(Obb, zipFile);
+                File file = new File(zipFile);
                 file.delete();
             }
         } catch (Exception e) {

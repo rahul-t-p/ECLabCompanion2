@@ -75,8 +75,7 @@ public class Experiment_bec extends AppCompatActivity {
         WebView webview;
         setContentView(R.layout.webview);
         webview = (WebView) findViewById(R.id.webview);
-        webview.getSettings().setSupportZoom(true); //Enable Zoom.
-        webview.getSettings().setBuiltInZoomControls(true); //Enable Zoom Controls.
+        webview.getSettings().setBuiltInZoomControls(true);
         screen_flag = 1; //We have entered HTML view.
         switch (view.getId()) {
             case R.id.s1becexp1:
