@@ -312,7 +312,7 @@ public class Course_list extends AppCompatActivity {
         } else {
             source = "s4aic.zip";
             destin = "s4aic";
-            String url = "https://www.dropbox.com/s/z911u37efkm0cfz/s4lcd.zip?dl=1";
+            String url = "https://www.dropbox.com/s/rbf832zlqdycxa2/s4aic.zip?dl=1";
             download.execute(url); //Pass The Url
         }
         //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
