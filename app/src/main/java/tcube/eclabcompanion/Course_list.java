@@ -297,7 +297,16 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s3ecc() { //The above process is repeated for all courses.
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s3ecc.zip";
+            destin = "s3ecc";
+            String url = "https://www.dropbox.com/s/2jpkp3r0uj8dcui/s3ecc.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
     }
 
     public void fetch_s3eda() {
@@ -407,7 +416,33 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s3ecc() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getObbDir();
+                        boolean log;
+                        File file = new File(Obb, "s3ecc");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
+                            }
+                        }
+                        log = file.delete();
+                        file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s3eda() {

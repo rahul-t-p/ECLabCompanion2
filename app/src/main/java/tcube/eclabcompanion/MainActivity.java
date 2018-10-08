@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s3ecc");
         if( file.exists()) {
-            //Intent intent = new Intent(this, Experiment_ecc.class);
-            //startActivity(intent); //Starts next activity for the particular course.
+            Intent intent = new Intent(this, Experiment_ecc.class);
+            startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
