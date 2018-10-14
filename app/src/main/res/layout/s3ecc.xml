@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s3ecc_xml"
+    android:background="?attr/backgroundcolor"
+    tools:context="tcube.eclabcompanion.Experiment_ecc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/s3ecc_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar"
+            android:minHeight="@dimen/toolbar"
+            android:id="@+id/s3ecc_toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp1"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1. VI Characteristics of rectifier and zener diodes."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp2"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp1"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="2. RC integrating and differentiating circuits."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp3"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp2"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="3 . Clipping and clamping circuits."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp4"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp3"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="4. Fullwave Rectifier -with and without filter- ripple factor and regulation."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp5"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp4"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="5. Simple Zener voltage regulator."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp6"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp5"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="6. Characteristics of BJT in CE configuration and evaluation of parameters."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp7"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp6"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="7. Characteristics of MOSFET in CS configuration and evaluation of parameters"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp8"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp7"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="8. RC coupled CE amplifier"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp9"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp8"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="9. MOSFET amplifier - CS"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp10"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp9"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="10. Cascade amplifier – gain and frequency response"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp11"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp10"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="11. Cascode amplifier -frequency response"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp12"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp11"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="12. Feedback amplifiers (current series, voltage series)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp13"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp12"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="13. Low frequency oscillators –RC phaseshift, Wien bridge"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp14"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp13"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="14. High frequency oscillators –Colpitt’s and Hartley"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp15"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp14"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="15. Power amplifiers (transformer less) - Class B and Class AB"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp16"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp15"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="16. Transistor series voltage regulator"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp17"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp16"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="17. Tuned amplifier - frequency response"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp18"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp17"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="18. Bootstrap sweep circuit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp19"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp18"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="19. Multivibrators -Astable, Monostable and Bistable"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s3eccexp20"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s3eccexp19"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s3ecc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="20. Schmitt trigger"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

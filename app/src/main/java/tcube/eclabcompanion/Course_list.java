@@ -716,15 +716,10 @@ public class Course_list extends AppCompatActivity {
         @Override
         protected void onPostExecute(String unused) {
             dismissDialog(DIALOG_DOWNLOAD_PROGRESS);
-            //setContentView(R.layout.activity_main);
             screen_flag = 1;
             course.setBackgroundResource(R.mipmap.delete);
-            //file_check();
-            //file_checkto();
             Toast.makeText(getBaseContext(), "Download Completed", Toast.LENGTH_SHORT).show();
-            setContentView(R.layout.activity_main);
-            mainActivity.file_checkto();
-
+            onBackPressed();
         }
     }
 }

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s5dsp_xml"
+    android:background="?attr/backgroundcolor"
+    tools:context="tcube.eclabcompanion.Experiment_dsp">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/s5dsp_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar"
+            android:minHeight="@dimen/toolbar"
+            android:id="@+id/s5dsp_toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexpA"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:clickable="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="Experiments on Digital Signal Processor/ DSP kits"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp1"
+                android:layout_below="@id/s5dspexpA"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1. Generation of sine wave and standard test signals."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp2"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp1"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="2. Convolution : Linear and Circular."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp3"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp2"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="3. Real Time FIR Filter implementation by inputting a signal from the signal generator"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp4"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp3"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="4 . Real Time IIR Filter implementation by inputting a signal from the signal generator"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp5"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp4"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="5 . Sampling of analog signal and study of aliasing."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexpB"
+                android:layout_below="@id/s5dspexp5"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:clickable="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="Experiments based on MATLAB/SciLab/OCTAVE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp6"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexpB"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1 . Generation of Waveforms (Continuous and Discrete)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp7"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp6"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="2 . Verification of Sampling Theorem."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp8"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp7"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="3 . Time and Frequency Response of LTI systems (First and second order)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp9"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp8"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="4 . Linear Convolution, Circular Convolution and Linear Convolution using Circular Convolution."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp10"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp9"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="5 . To find the DFT and IDFT for the given input sequence."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp11"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp10"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="6 . Linear convolution using DFT (Overlap-add and Overlap-Save methods)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp12"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp11"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="7 . To find the DCT and IDCT for the given input sequence."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp13"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp12"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="8 . To find FFT and IFFT for the given input sequence."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp14"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp13"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="9 . FIR and IIR filter design using Filter Design Toolbox."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp15"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp14"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="10 . FIR Filter (Low-pass, High-pass and Band-pass)design (Window method)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp16"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp15"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="11 . IIR Filter (Low-pass, High-pass and Band-pass)design (Butterworth and Chebychev)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp17"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp16"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="12 . Generation of AM, FM &amp; PWM waveforms and their spectrum."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp18"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp17"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="13 . Generation of DTMF signal."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp19"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp18"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="14 . Study of sampling rate conversion (Decimation, Interpolation, Rational factor)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp20"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp19"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="15 . Filtering of noisy signals"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp21"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp20"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="16 . Implementation of simple algorithms in audio processing."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s5dspexp22"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s5dspexp21"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s5dsp_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="17 . Implementation of simple algorithms in image processing."/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

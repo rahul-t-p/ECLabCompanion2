@@ -34,6 +34,12 @@
             android:theme="@style/AppTheme"/>
 
         <activity
+            android:name=".Experiment_eda"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
             android:name=".Experiment_ecc"
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity"
@@ -46,19 +52,37 @@
             android:theme="@style/AppTheme"/>
 
         <activity
-            android:name=".Experiment_dsp"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme"/>
-
-        <activity
             android:name=".Experiment_aic"
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme"/>
 
         <activity
+            android:name=".Experiment_dsp"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".Experiment_pow"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
             android:name=".Experiment_mpmc"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".Experiment_come"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".Experiment_coms"
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme"/>
