@@ -30,13 +30,15 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBG">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/layoutcolor"
+                android:background="@color/colorPrimaryDark"
                 android:orientation="horizontal"
                 android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s7comsexp1"
+                android:id="@+id/s7comsexpA"
+                android:clickable="false"
                 android:layout_marginBottom="@dimen/small_gap"
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
@@ -50,8 +52,34 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:textColor="@color/colorWhite"
-                    android:text="1 . Data transfer between specified memory locations."/>
+                    android:text="Microwave Experiments"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/layoutcolor"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s7comsexp1"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_below="@id/s7comsexpA"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s7coms_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="1. GUNN diode characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -76,7 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2 . Largest/smallest from a series."/>
+                    android:text="2. Reflex Klystron Mode Characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3 . Sorting of data."/>
+                    android:text="3. VSWR and Frequency measurement."/>
             </LinearLayout>
 
             <LinearLayout
@@ -126,7 +154,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4 . Arithmetic operations on 8 and 16 bit data"/>
+                    android:text="4. Verify the relation between Guide wave length, free space wave length and cut off wave length for rectangular wave guide."/>
             </LinearLayout>
 
             <LinearLayout
@@ -151,7 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5 . Sum of a series of 8 bit data"/>
+                    android:text="5. Measurement of E-plane and H-plane characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -176,7 +204,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6 . Multiplication by shift and add method"/>
+                    android:text="6. Directional Coupler Characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -201,7 +229,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7 . Square,cube and square root of 8 bit data"/>
+                    android:text="7. Unknown load impedance measurement using smith chart and verification using transmission line equation."/>
             </LinearLayout>
 
             <LinearLayout
@@ -226,7 +254,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8 . Matrix addition"/>
+                    android:text="8. Measurement of dielectric constant for given solid dielectric cell."/>
             </LinearLayout>
 
             <LinearLayout
@@ -251,7 +279,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9 . LCM and HCF of two 8 bit numbers"/>
+                    android:text="9. Antenna Pattern Measurement."/>
             </LinearLayout>
 
             <LinearLayout
@@ -276,7 +304,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10 . Code conversion – Hex to Decimal and ASCII to Decimal"/>
+                    android:text="10. Study of Vector Network Analyser."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s7comsexpB"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s7comsexp10"
+                android:clickable="false"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s7coms_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:text="Optical Experiments"/>
             </LinearLayout>
 
             <LinearLayout
@@ -290,7 +345,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp10"
+                android:layout_below="@id/s7comsexpB"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -301,7 +356,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="11 . Time delay generation and relay interface"/>
+                    android:text="1. Measurement of Numerical Aperture of a Fiber."/>
             </LinearLayout>
 
             <LinearLayout
@@ -326,7 +381,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="12 . Display and keyboard interface"/>
+                    android:text="2. Study of losses in Optical fiber."/>
             </LinearLayout>
 
             <LinearLayout
@@ -351,7 +406,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="13 . ADC interface"/>
+                    android:text="3. Setting up of Fiber optic Digital link."/>
             </LinearLayout>
 
             <LinearLayout
@@ -376,7 +431,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="14 . DAC interface with wave form generation"/>
+                    android:text="4. Preparation of a Splice joint and measurement of the splice loss."/>
             </LinearLayout>
 
             <LinearLayout
@@ -401,7 +456,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="15 . Stepper motor and DC motor interface"/>
+                    android:text="5. Power vs Current (P-I) characteristics and measure slope efficiency of Laser Diode."/>
             </LinearLayout>
 
             <LinearLayout
@@ -426,7 +481,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="16 . Realization of Boolean expression through port"/>
+                    android:text="6. Voltage vs Current (V-I) characteristics of Laser Diode."/>
             </LinearLayout>
 
             <LinearLayout
@@ -451,7 +506,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="17 . Elevator interfacing"/>
+                    android:text="7. Power vs Current (P-I) characteristics and measure slope efficiency of LED."/>
             </LinearLayout>
 
             <LinearLayout
@@ -476,7 +531,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="18 . Relay control"/>
+                    android:text="8. Voltage vs Current (V-I) characteristics of LED."/>
             </LinearLayout>
 
             <LinearLayout
@@ -501,7 +556,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="19 . Distance measurement"/>
+                    android:text="9. Characteristics of Photodiode and measure the responsivity."/>
             </LinearLayout>
 
             <LinearLayout
@@ -526,7 +581,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="20 . Temperature measurement"/>
+                    android:text="10. Characteristics of Avalanche Photo Diode (APD) and measure the responsivity."/>
             </LinearLayout>
 
             <LinearLayout
@@ -551,65 +606,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="21 . Txr-Rxr interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s7comsexp22"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp21"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="22 . Alphanumeric LCD display interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s7comsexp23"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp22"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="23 . Simple project work including multiple interfaces"/>
+                    android:text="11. Measurement of fiber characteristics, fiber damage and splice loss by OTDR."/>
             </LinearLayout>
 
         </RelativeLayout>
-
-
-
-
     </ScrollView>
-
-
 </LinearLayout>

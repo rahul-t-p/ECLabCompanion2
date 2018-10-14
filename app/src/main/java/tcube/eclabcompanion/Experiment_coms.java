@@ -166,14 +166,6 @@ public class Experiment_coms extends AppCompatActivity {
                 file = new File(Obb, "s7coms/s7comsexp21.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s7comsexp22:
-                file = new File(Obb, "s7coms/s7comsexp22.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s7comsexp23:
-                file = new File(Obb, "s7coms/s7comsexp23.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
         }
     }
 

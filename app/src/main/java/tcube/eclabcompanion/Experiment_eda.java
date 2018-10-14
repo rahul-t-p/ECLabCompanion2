@@ -78,6 +78,10 @@ public class Experiment_eda extends AppCompatActivity {
         webview.getSettings().setBuiltInZoomControls(true); //Enable zoom
         screen_flag = 1; //We have entered HTML view.
         switch (view.getId()) {
+            case R.id.s3edaexpA:
+                file = new File(Obb, "s3eda/s3edaexp23.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
             case R.id.s3edaexp1:
                 file = new File(Obb, "s3eda/s3edaexp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
@@ -130,6 +134,10 @@ public class Experiment_eda extends AppCompatActivity {
                 file = new File(Obb, "s3eda/s3edaexp12.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
+            case R.id.s3edaexpB:
+                file = new File(Obb, "s3eda/s3edaexp12.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
             case R.id.s3edaexp13:
                 file = new File(Obb, "s3eda/s3edaexp13.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
@@ -162,6 +170,10 @@ public class Experiment_eda extends AppCompatActivity {
                 file = new File(Obb, "s3eda/s3edaexp20.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
+            case R.id.s3edaexpC:
+                file = new File(Obb, "s3eda/s3edaexp20.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
             case R.id.s3edaexp21:
                 file = new File(Obb, "s3eda/s3edaexp21.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
@@ -172,6 +184,30 @@ public class Experiment_eda extends AppCompatActivity {
                 break;
             case R.id.s3edaexp23:
                 file = new File(Obb, "s3eda/s3edaexp23.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s3edaexp24:
+                file = new File(Obb, "s3eda/s3edaexp24.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s3edaexp25:
+                file = new File(Obb, "s3eda/s3edaexp25.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s3edaexp26:
+                file = new File(Obb, "s3eda/s3edaexp26.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s3edaexp27:
+                file = new File(Obb, "s3eda/s3edaexp27.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s3edaexp28:
+                file = new File(Obb, "s3eda/s3edaexp28.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s3edaexp29:
+                file = new File(Obb, "s3eda/s3edaexp29.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
         }

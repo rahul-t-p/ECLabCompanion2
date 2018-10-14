@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1 . Data transfer between specified memory locations."/>
+                    android:text="1. Design and Set up DC-DC converter."/>
             </LinearLayout>
 
             <LinearLayout
@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2 . Largest/smallest from a series."/>
+                    android:text="2. Design and Set up Push pull DC-DC Converter"/>
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3 . Sorting of data."/>
+                    android:text="3. Design and Set up Buck DC-DC Converters."/>
             </LinearLayout>
 
             <LinearLayout
@@ -126,7 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4 . Arithmetic operations on 8 and 16 bit data"/>
+                    android:text="4. Design and Set up Simple SMPS."/>
             </LinearLayout>
 
             <LinearLayout
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5 . Sum of a series of 8 bit data"/>
+                    android:text="5. Design and Set up Half bridge and full bridge converters."/>
             </LinearLayout>
 
             <LinearLayout
@@ -176,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6 . Multiplication by shift and add method"/>
+                    android:text="6. Design and Set up basic Inverter Circuits."/>
             </LinearLayout>
 
             <LinearLayout
@@ -201,7 +201,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7 . Square,cube and square root of 8 bit data"/>
+                    android:text="7. Transducer measurements using diode thermometer."/>
             </LinearLayout>
 
             <LinearLayout
@@ -226,7 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8 . Matrix addition"/>
+                    android:text="8. Transducer measurements using LVDT."/>
             </LinearLayout>
 
             <LinearLayout
@@ -251,7 +251,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9 . LCM and HCF of two 8 bit numbers"/>
+                    android:text="9. Transducer measurements using Strain gauge."/>
             </LinearLayout>
 
             <LinearLayout
@@ -276,7 +276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10 . Code conversion – Hex to Decimal and ASCII to Decimal"/>
+                    android:text="10. Transducer measurements using Pressure transducer."/>
             </LinearLayout>
 
             <LinearLayout
@@ -301,7 +301,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="11 . Time delay generation and relay interface"/>
+                    android:text="11. Transducer measurements using Thermocouple &amp; RTDS."/>
             </LinearLayout>
 
             <LinearLayout
@@ -326,290 +326,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="12 . Display and keyboard interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp13"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp12"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="13 . ADC interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp14"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp13"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="14 . DAC interface with wave form generation"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp15"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp14"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="15 . Stepper motor and DC motor interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp16"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp15"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="16 . Realization of Boolean expression through port"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp17"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp16"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="17 . Elevator interfacing"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp18"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp17"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="18 . Relay control"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp19"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp18"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="19 . Distance measurement"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp20"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp19"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="20 . Temperature measurement"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp21"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp20"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="21 . Txr-Rxr interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp22"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp21"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="22 . Alphanumeric LCD display interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s5powexp23"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s5powexp22"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s5pow_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="23 . Simple project work including multiple interfaces"/>
+                    android:text="12. Transducer measurements using Photocells."/>
             </LinearLayout>
 
         </RelativeLayout>
-
-
-
-
     </ScrollView>
-
-
 </LinearLayout>

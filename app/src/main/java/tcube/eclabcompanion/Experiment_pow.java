@@ -130,56 +130,11 @@ public class Experiment_pow extends AppCompatActivity {
                 file = new File(Obb, "s5pow/s5powexp12.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s5powexp13:
-                file = new File(Obb, "s5pow/s5powexp13.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp14:
-                file = new File(Obb, "s5pow/s5powexp14.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp15:
-                file = new File(Obb, "s5pow/s5powexp15.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp16:
-                file = new File(Obb, "s5pow/s5powexp16.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp17:
-                file = new File(Obb, "s5pow/s5powexp17.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp18:
-                file = new File(Obb, "s5pow/s5powexp18.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp19:
-                file = new File(Obb, "s5pow/s5powexp19.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp20:
-                file = new File(Obb, "s5pow/s5powexp20.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp21:
-                file = new File(Obb, "s5pow/s5powexp21.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp22:
-                file = new File(Obb, "s5pow/s5powexp22.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp23:
-                file = new File(Obb, "s5pow/s5powexp23.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
         }
     }
 
     public void restartApp(){
         Intent intent=new Intent(getApplicationContext(),Experiment_pow.class);
         startActivity(intent);
-
     }
 }

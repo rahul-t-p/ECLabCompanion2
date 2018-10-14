@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -27,6 +26,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Objects;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -47,15 +47,14 @@ public class Course_list extends AppCompatActivity {
         setContentView(R.layout.course_list);
         file_check();
         mainActivity=new MainActivity();
-        Course_toolbar= (Toolbar) findViewById(R.id.course_toolbar);
+        Course_toolbar= findViewById(R.id.course_toolbar);
         setSupportActionBar(Course_toolbar);
-        getSupportActionBar().setTitle("Courses");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Courses");
         Course_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
-
-        }
+    }
 
     public void file_check() {
-        course = (ImageButton) findViewById(R.id.course_1_available);
+        course = findViewById(R.id.course_1_available);
         File Obb = getObbDir();
 
 
@@ -78,7 +77,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s3ecc"); //The above process is repeated for all courses.
-        course = (ImageButton) findViewById(R.id.course_2_available);
+        course = findViewById(R.id.course_2_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +96,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s3eda");
-        course = (ImageButton) findViewById(R.id.course_3_available);
+        course = findViewById(R.id.course_3_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -116,7 +115,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s4aic");
-        course = (ImageButton) findViewById(R.id.course_4_available);
+        course = findViewById(R.id.course_4_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -135,7 +134,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s4lcd");
-        course = (ImageButton) findViewById(R.id.course_5_available);
+        course = findViewById(R.id.course_5_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -154,7 +153,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s5dsp");
-        course = (ImageButton) findViewById(R.id.course_6_available);
+        course = findViewById(R.id.course_6_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -173,7 +172,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s5pow");
-        course = (ImageButton) findViewById(R.id.course_7_available);
+        course = findViewById(R.id.course_7_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -192,7 +191,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s6mpmc");
-        course = (ImageButton) findViewById(R.id.course_8_available);
+        course = findViewById(R.id.course_8_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -211,7 +210,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s6come");
-        course = (ImageButton) findViewById(R.id.course_9_available);
+        course = findViewById(R.id.course_9_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -230,7 +229,7 @@ public class Course_list extends AppCompatActivity {
             });
         }
         fileCheck = new File(Obb, "s7coms");
-        course = (ImageButton) findViewById(R.id.course_10_available);
+        course = findViewById(R.id.course_10_available);
         if (fileCheck.isDirectory()) {
             course.setBackgroundResource(R.mipmap.delete);
             course.setOnClickListener(new View.OnClickListener() {
@@ -285,7 +284,7 @@ public class Course_list extends AppCompatActivity {
 
     public void fetch_s1bec() { //Network Thread Creator to fetch the course.
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
         if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
             Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
         } else {
@@ -298,7 +297,7 @@ public class Course_list extends AppCompatActivity {
 
     public void fetch_s3ecc() { //The above process is repeated for all courses.
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
         if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
             Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
         } else {
@@ -316,7 +315,7 @@ public class Course_list extends AppCompatActivity {
     public void fetch_s4aic() {
         //Network Thread Creator to fetch the course.
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
         if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
             Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
         } else {
@@ -331,7 +330,7 @@ public class Course_list extends AppCompatActivity {
     public void fetch_s4lcd() {
         //Network Thread Creator to fetch the course.
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
         if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
             Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
         } else {
@@ -346,7 +345,7 @@ public class Course_list extends AppCompatActivity {
     public void fetch_s5dsp() {
         //Network Thread Creator to fetch the course.
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
         if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
             Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
         } else {
