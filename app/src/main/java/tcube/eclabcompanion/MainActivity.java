@@ -8,9 +8,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
-
 import java.io.File;
-
 import at.markushi.ui.CircleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,17 +21,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bundle=new Bundle();
         file_checkto();
-
-
-
-
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         file_checkto();
-        // on starting what to do
     }
 
     @Override
@@ -117,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s3eda");
         if( file.exists()) {
-            //Intent intent = new Intent(this, Experiment_eda.class);
-            //startActivity(intent); //Starts next activity for the particular course.
+            Intent intent = new Intent(this, Experiment_eda.class);
+            startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -169,8 +162,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s5pow");
         if( file.exists()) {
-            //Intent intent = new Intent(this, Experiment_pow.class);
-            //startActivity(intent); //Starts next activity for the particular course.
+            Intent intent = new Intent(this, Experiment_pow.class);
+            startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -195,8 +188,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s6come");
         if( file.exists()) {
-            //Intent intent = new Intent(this, Experiment_come.class);
-            //startActivity(intent); //Starts next activity for the particular course.
+            Intent intent = new Intent(this, Experiment_come.class);
+            startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -208,8 +201,8 @@ public class MainActivity extends AppCompatActivity {
         File Obb = getObbDir();
         File file = new File(Obb, "s7coms");
         if( file.exists()) {
-            //Intent intent = new Intent(this, Experiment_coms.class);
-            //startActivity(intent); //Starts next activity for the particular course.
+            Intent intent = new Intent(this, Experiment_coms.class);
+            startActivity(intent); //Starts next activity for the particular course.
         }
         else {
 
@@ -218,8 +211,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void file_checkto() { //This function dynamically sets the course images based on the presence of corresponding folder.
-        course_icon = (CircleButton) findViewById(R.id.s1bec);
-        add_button= (CircleButton) findViewById(R.id.button);
+        course_icon =  findViewById(R.id.s1bec);
+        add_button= findViewById(R.id.button);
 
         File Obb = getObbDir();
 
@@ -232,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
             // Make the button invisible.
         }
-        course_icon = (CircleButton) findViewById(R.id.s3eda); //Same process is repeated for all courses.
+        course_icon = findViewById(R.id.s3eda); //Same process is repeated for all courses.
 
         fileCheck = new File (Obb,"s3eda");
         if (fileCheck.isDirectory()) {
@@ -243,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
 
         }
-        course_icon = (CircleButton) findViewById(R.id.s3ecc);
+        course_icon =findViewById(R.id.s3ecc);
 
         fileCheck = new File (Obb,"s3ecc");
         if (fileCheck.isDirectory()) {
@@ -252,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s4aic);
+        course_icon = findViewById(R.id.s4aic);
 
         fileCheck = new File (Obb,"s4aic");
         if (fileCheck.isDirectory()) {
@@ -261,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s4lcd);
+        course_icon =findViewById(R.id.s4lcd);
 
         fileCheck = new File (Obb,"s4lcd");
         if (fileCheck.isDirectory()) {
@@ -270,7 +263,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s5dsp);
+        course_icon = findViewById(R.id.s5dsp);
 
         fileCheck = new File (Obb,"s5dsp");
         if (fileCheck.isDirectory()) {
@@ -279,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s5pow);
+        course_icon = findViewById(R.id.s5pow);
 
         fileCheck = new File (Obb,"s5pow");
         if (fileCheck.isDirectory()) {
@@ -288,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s6mic);
+        course_icon =findViewById(R.id.s6mic);
 
         fileCheck = new File (Obb,"s6mpmc");
         if (fileCheck.isDirectory()) {
@@ -297,7 +290,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s6come);
+        course_icon = findViewById(R.id.s6come);
 
         fileCheck = new File (Obb,"s6come");
         if (fileCheck.isDirectory()) {
@@ -306,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             course_icon.setColor(getResources().getColor(R.color.colorBG));
         }
-        course_icon = (CircleButton) findViewById(R.id.s7coms);
+        course_icon = findViewById(R.id.s7coms);
 
         fileCheck = new File (Obb,"s7coms");
         if (fileCheck.isDirectory()) {
