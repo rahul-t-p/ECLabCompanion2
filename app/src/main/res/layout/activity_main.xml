@@ -10,30 +10,23 @@
     android:layout_height="match_parent"
     tools:context="tcube.eclabcompanion.MainActivity">
     <LinearLayout
-        android:background="@mipmap/ece"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
-        <RelativeLayout
+        android:layout_weight="3.5">
+
+        <ImageView
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:ignore="UselessParent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="EC Lab Companion"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:layout_centerInParent="true"/>
-        </RelativeLayout>
+            android:background="@mipmap/ece"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5">
+        android:layout_weight="4.5">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

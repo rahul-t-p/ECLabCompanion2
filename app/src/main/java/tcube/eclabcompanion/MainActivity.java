@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            Toast.makeText(getBaseContext(), "Please download course", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
     }
 

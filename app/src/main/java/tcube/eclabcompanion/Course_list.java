@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -248,7 +249,6 @@ public class Course_list extends AppCompatActivity {
             });
         }
     }
-
 
     @Override
     protected void onStart() {
@@ -668,7 +668,7 @@ public class Course_list extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(getBaseContext(), "Checking files for download", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Download will start soon", Toast.LENGTH_SHORT).show();
             showDialog(DIALOG_DOWNLOAD_PROGRESS);
         }
 
@@ -719,11 +719,12 @@ public class Course_list extends AppCompatActivity {
             //setContentView(R.layout.activity_main);
             screen_flag = 1;
             course.setBackgroundResource(R.mipmap.delete);
-            file_check();
+            //file_check();
             //file_checkto();
             Toast.makeText(getBaseContext(), "Download Completed", Toast.LENGTH_SHORT).show();
+            setContentView(R.layout.activity_main);
+            mainActivity.file_checkto();
 
         }
     }
-
 }
