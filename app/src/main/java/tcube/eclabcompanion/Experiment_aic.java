@@ -22,7 +22,7 @@ public class Experiment_aic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.s4aic);
         setTitle("Analog Integrated Circuits");
-        s4aic_toolbar= (Toolbar) findViewById(R.id.s4aic_toolbar);
+        s4aic_toolbar= findViewById(R.id.s4aic_toolbar);
         setSupportActionBar(s4aic_toolbar);
         getSupportActionBar().setTitle("Analog Integrated Circuits");
         s4aic_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
@@ -32,8 +32,11 @@ public class Experiment_aic extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s4aic);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Analog Integrated Circuits");
+            s4aic_toolbar= findViewById(R.id.s4aic_toolbar);
+            setSupportActionBar(s4aic_toolbar);
+            getSupportActionBar().setTitle("Analog Integrated Circuits");
+            s4aic_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

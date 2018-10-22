@@ -31,8 +31,11 @@ public class Experiment_mpmc extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s6mpmc);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Microcontroller Lab");
+            s6mpmc_toolbar= (Toolbar) findViewById(R.id.s6mpmc_toolbar);
+            setSupportActionBar(s6mpmc_toolbar);
+            getSupportActionBar().setTitle("Microcontroller Lab");
+            s6mpmc_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

@@ -31,8 +31,11 @@ public class Experiment_dsp extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s5dsp);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Digital Signal Processing");
+            s5dsp_toolbar= (Toolbar) findViewById(R.id.s5dsp_toolbar);
+            setSupportActionBar(s5dsp_toolbar);
+            getSupportActionBar().setTitle("Digital Signal Processing");
+            s5dsp_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

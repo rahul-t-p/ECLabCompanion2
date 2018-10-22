@@ -31,8 +31,11 @@ public class Experiment_coms extends AppCompatActivity {
     public void onBackPressed() {
         if (screen_flag == 1) {
             setContentView(R.layout.s7coms);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of experiments");
+            setTitle("Communication Systems Lab");
+            s7coms_toolbar= (Toolbar) findViewById(R.id.s7coms_toolbar);
+            setSupportActionBar(s7coms_toolbar);
+            getSupportActionBar().setTitle("Communication Systems Lab");
+            s7coms_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

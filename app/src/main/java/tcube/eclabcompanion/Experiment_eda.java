@@ -31,8 +31,11 @@ public class Experiment_eda extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s3eda);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Electronics Design & Automation");
+            s3eda_toolbar= (Toolbar) findViewById(R.id.s3eda_toolbar);
+            setSupportActionBar(s3eda_toolbar);
+            getSupportActionBar().setTitle("Electronics Design & Automation");
+            s3eda_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

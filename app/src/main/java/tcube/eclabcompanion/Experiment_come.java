@@ -31,8 +31,11 @@ public class Experiment_come extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s6come);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Communication Engineering Lab");
+            s6come_toolbar= (Toolbar) findViewById(R.id.s6come_toolbar);
+            setSupportActionBar(s6come_toolbar);
+            getSupportActionBar().setTitle("Communication Engineering Lab");
+            s6come_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

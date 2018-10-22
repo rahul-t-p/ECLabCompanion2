@@ -32,8 +32,11 @@ public class Experiment_lcd extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s4lcd);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Logic Circuit Design");
+            s4lcd_toolbar= (Toolbar) findViewById(R.id.s4lcd_toolbar);
+            setSupportActionBar(s4lcd_toolbar);
+            getSupportActionBar().setTitle("Logic Circuit Design");
+            s4lcd_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

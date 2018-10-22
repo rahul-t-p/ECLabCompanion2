@@ -31,8 +31,11 @@ public class Experiment_ecc extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s3ecc);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Electronic Circuits Lab");
+            s3ecc_toolbar= (Toolbar) findViewById(R.id.s3ecc_toolbar);
+            setSupportActionBar(s3ecc_toolbar);
+            getSupportActionBar().setTitle("Electronic Circuits Lab");
+            s3ecc_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

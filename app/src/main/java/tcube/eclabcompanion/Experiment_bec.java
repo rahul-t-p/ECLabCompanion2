@@ -31,8 +31,11 @@ public class Experiment_bec extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s1bec);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Basic Electronics Workshop");
+            s1bec_toolbar= (Toolbar) findViewById(R.id.s1bec_toolbar);
+            setSupportActionBar(s1bec_toolbar);
+            getSupportActionBar().setTitle("Basic Electronics Workshop");
+            s1bec_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();

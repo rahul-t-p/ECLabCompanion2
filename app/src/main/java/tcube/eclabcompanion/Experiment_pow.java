@@ -31,8 +31,11 @@ public class Experiment_pow extends AppCompatActivity {
     public void onBackPressed() {  // It is the Exit button Question
         if (screen_flag == 1) {
             setContentView(R.layout.s5pow);
-            setTitle("List of Experiments");
-            getSupportActionBar().setTitle("List of Experiments");
+            setTitle("Power Electronics & Instrumentation");
+            s5pow_toolbar= (Toolbar) findViewById(R.id.s5pow_toolbar);
+            setSupportActionBar(s5pow_toolbar);
+            getSupportActionBar().setTitle("Power Electronics & Instrumentation");
+            s5pow_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
             screen_flag = 0;
         } else {
             super.onBackPressed();
