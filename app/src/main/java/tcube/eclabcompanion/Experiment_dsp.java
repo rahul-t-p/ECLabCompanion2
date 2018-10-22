@@ -32,6 +32,7 @@ public class Experiment_dsp extends AppCompatActivity {
         if (screen_flag == 1) {
             setContentView(R.layout.s5dsp);
             setTitle("List of Experiments");
+            getSupportActionBar().setTitle("List of Experiments");
             screen_flag = 0;
         } else {
             super.onBackPressed();

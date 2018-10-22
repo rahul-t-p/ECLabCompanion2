@@ -20,10 +20,10 @@ public class Experiment_come extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.s6come);
-        setTitle("Electronics Design & Automation");
+        setTitle("Communication Engineering Lab");
         s6come_toolbar= (Toolbar) findViewById(R.id.s6come_toolbar);
         setSupportActionBar(s6come_toolbar);
-        getSupportActionBar().setTitle("Electronics Design & Automation");
+        getSupportActionBar().setTitle("Communication Engineering Lab");
         s6come_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
     }
 
@@ -32,6 +32,7 @@ public class Experiment_come extends AppCompatActivity {
         if (screen_flag == 1) {
             setContentView(R.layout.s6come);
             setTitle("List of Experiments");
+            getSupportActionBar().setTitle("List of Experiments");
             screen_flag = 0;
         } else {
             super.onBackPressed();
@@ -168,10 +169,6 @@ public class Experiment_come extends AppCompatActivity {
                 break;
             case R.id.s6comeexp22:
                 file = new File(Obb, "s6come/s6comeexp22.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp23:
-                file = new File(Obb, "s6come/s6comeexp23.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
         }

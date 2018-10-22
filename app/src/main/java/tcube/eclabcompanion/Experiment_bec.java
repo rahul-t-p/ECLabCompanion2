@@ -32,6 +32,7 @@ public class Experiment_bec extends AppCompatActivity {
         if (screen_flag == 1) {
             setContentView(R.layout.s1bec);
             setTitle("List of Experiments");
+            getSupportActionBar().setTitle("List of Experiments");
             screen_flag = 0;
         } else {
             super.onBackPressed();

@@ -33,6 +33,7 @@ public class Experiment_lcd extends AppCompatActivity {
         if (screen_flag == 1) {
             setContentView(R.layout.s4lcd);
             setTitle("List of Experiments");
+            getSupportActionBar().setTitle("List of Experiments");
             screen_flag = 0;
         } else {
             super.onBackPressed();

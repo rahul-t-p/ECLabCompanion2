@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1 . Data transfer between specified memory locations."/>
+                    android:text="1.  AM Generation using BJT."/>
             </LinearLayout>
 
             <LinearLayout
@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2 . Largest/smallest from a series."/>
+                    android:text="2. AM Using Multiplier IC AD633."/>
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3 . Sorting of data."/>
+                    android:text="3. AM Detection."/>
             </LinearLayout>
 
             <LinearLayout
@@ -126,7 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4 . Arithmetic operations on 8 and 16 bit data"/>
+                    android:text="4. IF Tuned Amplifier"/>
             </LinearLayout>
 
             <LinearLayout
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5 . Sum of a series of 8 bit data"/>
+                    android:text="5. FM using 555 IC."/>
             </LinearLayout>
 
             <LinearLayout
@@ -176,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6 . Multiplication by shift and add method"/>
+                    android:text="6. FM Generation and Demodulation Using 4046"/>
             </LinearLayout>
 
             <LinearLayout
@@ -201,7 +201,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7 . Square,cube and square root of 8 bit data"/>
+                    android:text="7. Frequency Multiplier using 4046"/>
             </LinearLayout>
 
             <LinearLayout
@@ -226,7 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8 . Matrix addition"/>
+                    android:text="8. Pre-emphasis and de-emphasis"/>
             </LinearLayout>
 
             <LinearLayout
@@ -251,7 +251,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9 . LCM and HCF of two 8 bit numbers"/>
+                    android:text="9. Analog signal sampling &amp; Reconstruction"/>
             </LinearLayout>
 
             <LinearLayout
@@ -276,7 +276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10 . Code conversion – Hex to Decimal and ASCII to Decimal"/>
+                    android:text="10. Pseudo-random Binary Sequence Generator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -301,7 +301,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="11 . Time delay generation and relay interface"/>
+                    android:text="11. Time Division Multiplexing"/>
             </LinearLayout>
 
             <LinearLayout
@@ -326,7 +326,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="12 . Display and keyboard interface"/>
+                    android:text="12. Delta Modulation"/>
             </LinearLayout>
 
             <LinearLayout
@@ -351,7 +351,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="13 . ADC interface"/>
+                    android:text="13. Sigma Delta Modulation"/>
             </LinearLayout>
 
             <LinearLayout
@@ -376,7 +376,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="14 . DAC interface with wave form generation"/>
+                    android:text="14. Adaptive Delta Modulation"/>
             </LinearLayout>
 
             <LinearLayout
@@ -401,7 +401,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="15 . Stepper motor and DC motor interface"/>
+                    android:text="15. PAM Modulator and Demodulator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -426,7 +426,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="16 . Realization of Boolean expression through port"/>
+                    android:text="16. PWM Using 555"/>
             </LinearLayout>
 
             <LinearLayout
@@ -451,7 +451,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="17 . Elevator interfacing"/>
+                    android:text="17. PPM Using 555"/>
             </LinearLayout>
 
             <LinearLayout
@@ -476,7 +476,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="18 . Relay control"/>
+                    android:text="18. Binary Phase Shift Keying"/>
             </LinearLayout>
 
             <LinearLayout
@@ -501,7 +501,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="19 . Distance measurement"/>
+                    android:text="19. Differential Phase Shift Keying"/>
             </LinearLayout>
 
             <LinearLayout
@@ -526,7 +526,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="20 . Temperature measurement"/>
+                    android:text="20. Differential Encoded Phase Shift Keying"/>
             </LinearLayout>
 
             <LinearLayout
@@ -551,7 +551,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="21 . Txr-Rxr interface"/>
+                    android:text="21. PCM"/>
             </LinearLayout>
 
             <LinearLayout
@@ -576,32 +576,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="22 . Alphanumeric LCD display interface"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp23"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp22"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="23 . Simple project work including multiple interfaces"/>
+                    android:text="22. Quadrature Phase Shift Keying"/>
             </LinearLayout>
 
         </RelativeLayout>

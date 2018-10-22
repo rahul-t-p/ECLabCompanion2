@@ -20,10 +20,10 @@ public class Experiment_pow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.s5pow);
-        setTitle("Electronics Design & Automation");
+        setTitle("Power Electronics & Instrumentation");
         s5pow_toolbar= (Toolbar) findViewById(R.id.s5pow_toolbar);
         setSupportActionBar(s5pow_toolbar);
-        getSupportActionBar().setTitle("Electronics Design & Automation");
+        getSupportActionBar().setTitle("Power Electronics & Instrumentation");
         s5pow_toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
     }
 
@@ -32,6 +32,7 @@ public class Experiment_pow extends AppCompatActivity {
         if (screen_flag == 1) {
             setContentView(R.layout.s5pow);
             setTitle("List of Experiments");
+            getSupportActionBar().setTitle("List of Experiments");
             screen_flag = 0;
         } else {
             super.onBackPressed();
