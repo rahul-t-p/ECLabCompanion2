@@ -706,7 +706,7 @@
                                 android:id="@+id/twentytwo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Precautions"
+                                android:text="Instructions"
                                 android:textSize="12sp"/>
                             <TextView
                                 android:layout_below="@id/twentytwo"

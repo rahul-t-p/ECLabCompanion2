@@ -103,13 +103,13 @@ public class Experiment_mpmc extends AppCompatActivity {
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6mpmcexp6:
-                file = new File(Obb, "s6mpmc/s6mpmcexp6.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp6.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6mpmcexp7:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s6mpmc/s6mpmcexp7.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s6mpmc/s6mpmcexp7.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6mpmcexp8:
                 file = new File(Obb, "s6mpmc/s6mpmcexp8.html");
@@ -147,41 +147,49 @@ public class Experiment_mpmc extends AppCompatActivity {
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6mpmcexp16:
-                file = new File(Obb, "s6mpmc/s6mpmcexp16.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp16.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6mpmcexp17:
-                file = new File(Obb, "s6mpmc/s6mpmcexp17.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp17.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6mpmcexp18:
-                file = new File(Obb, "s6mpmc/s6mpmcexp19.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6mpmcexp19:
-                file = new File(Obb, "s6mpmc/s6mpmcexp20.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6mpmcexp20:
-                file = new File(Obb, "s6mpmc/s6mpmcexp21.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6mpmcexp21:
-                file = new File(Obb, "s6mpmc/s6mpmcexp22.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6mpmcexp22:
-                file = new File(Obb, "s6mpmc/s6mpmcexp23.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6mpmcexp23:
-                file = new File(Obb, "s6mpmc/s6mpmcexp24.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6mpmcexp24:
                 file = new File(Obb, "s6mpmc/s6mpmcexp18.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
+            case R.id.s6mpmcexp19:
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp19.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s6mpmcexp20:
+                file = new File(Obb, "s6mpmc/s6mpmcexp20.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s6mpmcexp21:
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp21.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s6mpmcexp22:
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp22.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s6mpmcexp23:
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp23.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            case R.id.s6mpmcexp24:
+                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+                //file = new File(Obb, "s6mpmc/s6mpmcexp24.html");
+                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+
         }
     }
 

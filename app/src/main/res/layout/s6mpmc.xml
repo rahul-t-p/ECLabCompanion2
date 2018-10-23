@@ -461,7 +461,7 @@
                 android:background="@color/colorPrimaryDark"
                 android:orientation="horizontal"
                 android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6mpmcexp24"
+                android:id="@+id/s6mpmcexp18"
                 android:layout_marginBottom="@dimen/small_gap"
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
@@ -486,31 +486,6 @@
                 android:background="@color/colorPrimaryDark"
                 android:orientation="horizontal"
                 android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6mpmcexp18"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6mpmcexp24"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6mpmc_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="18 . Relay control"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
                 android:id="@+id/s6mpmcexp19"
                 android:layout_marginBottom="@dimen/small_gap"
                 android:layout_marginStart="@dimen/small_gap"
@@ -527,7 +502,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="19 . Distance measurement"/>
+                    android:text="18 . Relay control"/>
             </LinearLayout>
 
             <LinearLayout
@@ -552,7 +527,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="20 . Temperature measurement"/>
+                    android:text="19 . Distance measurement"/>
             </LinearLayout>
 
             <LinearLayout
@@ -577,7 +552,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="21 . Txr-Rxr interface"/>
+                    android:text="20 . Temperature measurement"/>
             </LinearLayout>
 
             <LinearLayout
@@ -602,7 +577,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="22 . Alphanumeric LCD display interface"/>
+                    android:text="21 . Txr-Rxr interface"/>
             </LinearLayout>
 
             <LinearLayout
@@ -617,6 +592,31 @@
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
                 android:layout_below="@id/s6mpmcexp22"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:onClick="s6mpmc_choose">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:text="22 . Alphanumeric LCD display interface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/minimum_height_ads"
+                android:id="@+id/s6mpmcexp24"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginStart="@dimen/small_gap"
+                android:layout_marginEnd="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_below="@id/s6mpmcexp23"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
