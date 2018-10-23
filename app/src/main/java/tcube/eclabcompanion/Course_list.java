@@ -523,6 +523,12 @@ public class Course_list extends AppCompatActivity {
                                 if(files[j].isDirectory()) {
                                     File[] files2 = files[j].listFiles();
                                     for (int k=0;k < files2.length;k++){
+                                        if(files2[k].isDirectory()) {
+                                            File[] files3 = files2[k].listFiles();
+                                            for (int l=0;l < files3.length;l++){
+                                                log = files3[l].delete();
+                                            }
+                                        }
                                         log = files2[k].delete();
                                     }
                                 }
