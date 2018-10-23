@@ -681,9 +681,9 @@
                                 android:layout_width="@dimen/circular_button"
                                 android:layout_height="@dimen/circular_button"
                                 android:padding="20dp"
-                                app:cb_color="#9CCC65"
+                                app:cb_color="#00FF00"
                                 android:tint="#ffffff"
-                                android:src="@drawable/cosicon"/>
+                                android:src="@drawable/genicon"/>
                             <View
                                 android:layout_below="@id/s7coms"
                                 android:layout_centerInParent="true"
@@ -698,7 +698,7 @@
                                 android:id="@+id/twentyone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Communication"
+                                android:text="General"
                                 android:textSize="12sp"/>
                             <TextView
                                 android:layout_below="@id/twentyone"
@@ -706,7 +706,7 @@
                                 android:id="@+id/twentytwo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="System"
+                                android:text="Precautions"
                                 android:textSize="12sp"/>
                             <TextView
                                 android:layout_below="@id/twentytwo"
