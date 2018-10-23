@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     lintOptions {
-        //checkReleaseBuilds false
+        checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
         // but continue the build even when errors are found:
         //abortOnError false
@@ -14,8 +14,8 @@ android {
         minSdkVersion 19
         //noinspection OldTargetApi
         targetSdkVersion 26
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.5"
     }
     buildTypes {
         release {
@@ -42,4 +42,5 @@ dependencies {
     implementation 'com.github.markushi:circlebutton:1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'org.jsoup:jsoup:1.8.3'
 }
