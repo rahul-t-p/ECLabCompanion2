@@ -73,7 +73,7 @@ public class Experiment_mpmc extends AppCompatActivity {
     }
 
     public void s6mpmc_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;

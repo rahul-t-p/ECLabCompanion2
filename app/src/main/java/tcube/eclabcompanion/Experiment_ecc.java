@@ -73,7 +73,7 @@ public class Experiment_ecc extends AppCompatActivity {
     }
 
     public void s3ecc_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;

@@ -55,7 +55,7 @@ public class Course_list extends AppCompatActivity {
 
     public void file_check() {
         course = findViewById(R.id.course_1_available);
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
 
 
         File fileCheck = new File(Obb, "s1bec");  // Checking for downloaded files
@@ -390,7 +390,7 @@ public class Course_list extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        File Obb = getObbDir();
+                        File Obb = getFilesDir();
                         boolean log;
                         File file = new File(Obb, "s1bec");
                         if( file.exists() ) {
@@ -420,7 +420,7 @@ public class Course_list extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        File Obb = getObbDir();
+                        File Obb = getFilesDir();
                         boolean log;
                         File file = new File(Obb, "s3ecc");
                         if( file.exists() ) {
@@ -454,7 +454,7 @@ public class Course_list extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        File Obb = getObbDir();
+                        File Obb = getFilesDir();
                         boolean log;
                         File file = new File(Obb, "s4aic");
                         if( file.exists() ) {
@@ -484,7 +484,7 @@ public class Course_list extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        File Obb = getObbDir();
+                        File Obb = getFilesDir();
                         boolean log;
                         File file = new File(Obb, "s4lcd");
                         if( file.exists() ) {
@@ -514,7 +514,7 @@ public class Course_list extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        File Obb = getObbDir();
+                        File Obb = getFilesDir();
                         boolean log;
                         File file = new File(Obb, "s5dsp");
                         if( file.exists() ) {
@@ -548,7 +548,7 @@ public class Course_list extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        File Obb = getObbDir();
+                        File Obb = getFilesDir();
                         boolean log;
                         File file = new File(Obb, "s6mpmc");
                         if( file.exists() ) {
@@ -579,6 +579,9 @@ public class Course_list extends AppCompatActivity {
     public void delete_s7coms() {
         //To be added Later
     }
+
+    /// getObbDir() <> getFilesDir()
+    
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void unzip(String zipFile,String location) {
         int BUFFER_SIZE = 1024;
@@ -644,6 +647,7 @@ public class Course_list extends AppCompatActivity {
                 mProgressDialog.setMessage("Downloading Course ..");
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 mProgressDialog.setCancelable(false);
+                mProgressDialog.setProgressNumberFormat(null);
                 mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
                     @Override //This function is problematic because even if the download fails, it shows successful.
                     public void onCancel(DialogInterface dialog) {
@@ -683,7 +687,7 @@ public class Course_list extends AppCompatActivity {
 
                 int lenghtOfFile = conexion.getContentLength();
                 Log.d("ANDRO_ASYNC", "Lenght of file: " + lenghtOfFile);
-                final File storage_root = getObbDir();
+                final File storage_root = getFilesDir();
                 final File extracted = new File(storage_root, destin);
                 final File file = new File(storage_root, source);
                 InputStream input = new BufferedInputStream(url.openStream());
@@ -707,6 +711,7 @@ public class Course_list extends AppCompatActivity {
             return null;
 
         }
+
         protected void onProgressUpdate(String... progress) {
             Log.d("ANDRO_ASYNC",progress[0]);
             mProgressDialog.setProgress(Integer.parseInt(progress[0]));

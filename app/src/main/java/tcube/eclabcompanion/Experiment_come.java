@@ -73,7 +73,7 @@ public class Experiment_come extends AppCompatActivity {
     }
 
     public void s6come_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;

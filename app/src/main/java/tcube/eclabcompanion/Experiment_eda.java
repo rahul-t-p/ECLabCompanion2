@@ -73,7 +73,7 @@ public class Experiment_eda extends AppCompatActivity {
     }
 
     public void s3eda_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;

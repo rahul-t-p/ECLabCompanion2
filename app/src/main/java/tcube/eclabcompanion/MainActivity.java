@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s1bec_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s1bec");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_bec.class);
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s3ecc_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s3ecc");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_ecc.class);
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s3eda_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s3eda");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_eda.class);
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s4aic_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s4aic");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_aic.class);
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s4lcd_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s4lcd");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_lcd.class);
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s5dsp_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s5dsp");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_dsp.class);
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s5pow_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s5pow");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_pow.class);
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s6mpmc_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s6mpmc");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_mpmc.class);
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s6come_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s6come");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_come.class);
@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void s7coms_go(View view){
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file = new File(Obb, "s7coms");
         if( file.exists()) {
             Intent intent = new Intent(this, Experiment_coms.class);
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
         course_icon =  findViewById(R.id.s1bec);
         add_button= findViewById(R.id.button);
 
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
 
         File fileCheck = new File (Obb,"s1bec"); // Checking for downloaded files
         if (fileCheck.isDirectory()) { //If Course is present ..

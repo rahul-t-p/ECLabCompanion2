@@ -73,7 +73,7 @@ public class Experiment_bec extends AppCompatActivity {
     }
 
     public void s1bec_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;

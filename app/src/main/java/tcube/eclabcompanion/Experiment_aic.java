@@ -74,7 +74,7 @@ public class Experiment_aic extends AppCompatActivity {
     }
 
     public void s4aic_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;

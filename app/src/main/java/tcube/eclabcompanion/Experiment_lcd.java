@@ -74,7 +74,7 @@ public class Experiment_lcd extends AppCompatActivity {
     }
 
     public void s4lcd_choose(View view) {
-        File Obb = getObbDir();
+        File Obb = getFilesDir();
         File file;
         setTitle("Experiment Details");
         WebView webview;
