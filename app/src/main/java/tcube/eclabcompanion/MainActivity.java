@@ -6,13 +6,16 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Toast;
 import java.io.File;
 import at.markushi.ui.CircleButton;
 
 public class MainActivity extends AppCompatActivity {
     Bundle bundle;
+    int screenflag;
     CircleButton course_icon,add_button;
 
     @Override
@@ -59,17 +62,25 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {      // It is the Exit button Question
-        new AlertDialog.Builder(this)
-                .setMessage("Do you really want to exit ?")
-                .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        MainActivity.this.finish();
-                    }
-                })
-                .setNegativeButton("No", null)
-                .show();
+        if (screenflag == 1) {
+            setContentView(R.layout.activity_main);
+            bundle=new Bundle();
+            file_checkto();
+            screenflag = 0;
+        } else {
+
+            new AlertDialog.Builder(this)
+                    .setMessage("Do you really want to exit ?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            MainActivity.this.finish();
+                        }
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
+        }
     }
 
     public void course_popup(View view) {
@@ -208,6 +219,15 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(getBaseContext(), "Please add this course first", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void doanddont(View view) {
+        WebView webview;
+        screenflag = 1;
+        setContentView(R.layout.webview);
+        webview = (WebView) findViewById(R.id.webview);
+        webview.getSettings().setBuiltInZoomControls(true);
+        webview.loadUrl("file:///android_asset/genprec.html");
     }
 
     public void file_checkto() { //This function dynamically sets the course images based on the presence of corresponding folder.

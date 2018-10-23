@@ -290,7 +290,7 @@ public class Course_list extends AppCompatActivity {
         } else {
             source = "s1bec.zip";
             destin = "s1bec";
-            String url = "https://www.dropbox.com/s/y2t7pqbryiqjv80/s1bec.zip?dl=1";
+            String url = "https://www.dropbox.com/s/vev84nyewtu9f6t/s1bec.zip?dl=1";
             download.execute(url); //Pass The Url
         }
     }
@@ -303,7 +303,7 @@ public class Course_list extends AppCompatActivity {
         } else {
             source = "s3ecc.zip";
             destin = "s3ecc";
-            String url = "https://www.dropbox.com/s/2jpkp3r0uj8dcui/s3ecc.zip?dl=1";
+            String url = "https://www.dropbox.com/s/bcuhfw3ouvsbzo8/s3ecc.zip?dl=1";
             download.execute(url); //Pass The Url
         }
     }
@@ -336,7 +336,7 @@ public class Course_list extends AppCompatActivity {
         } else {
             source = "s4lcd.zip";
             destin = "s4lcd";
-            String url = "https://www.dropbox.com/s/z911u37efkm0cfz/s4lcd.zip?dl=1";
+            String url = "https://www.dropbox.com/s/r89l1br3iv6e4r4/s4lcd.zip?dl=1";
             download.execute(url); //Pass The Url
         }
         //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
@@ -351,7 +351,7 @@ public class Course_list extends AppCompatActivity {
         } else {
             source = "s5dsp.zip";
             destin = "s5dsp";
-            String url = "https://www.dropbox.com/s/5zsrzqnqlzmf50j/s5dsp.zip?dl=1";
+            String url = "https://www.dropbox.com/s/ref1d8zcfuo3vta/s5dsp.zip?dl=1";
             download.execute(url); //Pass The Url
         }
         //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
@@ -370,7 +370,7 @@ public class Course_list extends AppCompatActivity {
         } else {
             source = "s6mpmc.zip";
             destin = "s6mpmc";
-            String url = "https://www.dropbox.com/s/jnmdkjlg77irjbq/s6mpmc.zip?dl=1";
+            String url = "https://www.dropbox.com/s/sz6opfzx7aaij9o/s6mpmc.zip?dl=1";
             download.execute(url); //Pass The Url
         }
         //Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
