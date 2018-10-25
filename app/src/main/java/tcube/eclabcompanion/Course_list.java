@@ -309,7 +309,16 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s3eda() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s3eda.zip";
+            destin = "s3eda";
+            String url = "https://www.dropbox.com/s/sozxcyo944y8alv/s3eda.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
     }
 
     public void fetch_s4aic() {
@@ -358,7 +367,16 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s5pow() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s6come.zip";
+            destin = "s6come";
+            String url = "https://www.dropbox.com/s/3wf0gc5wxp1wlsh/s5pow.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
     }
 
     public void fetch_s6mpmc() {
@@ -377,11 +395,29 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void fetch_s6come() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = Objects.requireNonNull(conMgr).getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s6come.zip";
+            destin = "s6come";
+            String url = "https://www.dropbox.com/s/jrtvvzxcv0j1ep5/s6come.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
     }
 
     public void fetch_s7coms() {
-        Toast.makeText(getBaseContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+        if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
+            Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
+        } else {
+            source = "s7coms.zip";
+            destin = "s7coms";
+            String url = "https://www.dropbox.com/s/y6g853ax50tok0l/s7coms.zip?dl=1";
+            download.execute(url); //Pass The Url
+        }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void delete_s1bec() { //Delete the downloaded folder .. make sure zip is deleted before that
@@ -445,7 +481,39 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s3eda() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getFilesDir();
+                        boolean log;
+                        File file = new File(Obb, "s3eda");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        if(files2[k].isDirectory()) {
+                                            File[] files3 = files2[k].listFiles();
+                                            for (int l=0;l < files3.length;l++){
+                                                log = files3[l].delete();
+                                            }
+                                        }
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
+                            }
+                        }
+                        log = file.delete();
+                        file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s4aic() {
@@ -545,7 +613,39 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s5pow() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getFilesDir();
+                        boolean log;
+                        File file = new File(Obb, "s5dsp");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        if(files2[k].isDirectory()) {
+                                            File[] files3 = files2[k].listFiles();
+                                            for (int l=0;l < files3.length;l++){
+                                                log = files3[l].delete();
+                                            }
+                                        }
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
+                            }
+                        }
+                        log = file.delete();
+                        file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s6mpmc() {
@@ -579,11 +679,69 @@ public class Course_list extends AppCompatActivity {
     }
 
     public void delete_s6come() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getFilesDir();
+                        boolean log;
+                        File file = new File(Obb, "s6come");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
+                            }
+                        }
+                        log = file.delete();
+                        file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void delete_s7coms() {
-        //To be added Later
+        new AlertDialog.Builder(this)
+                .setMessage("Do you really want to delete this Course ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        File Obb = getFilesDir();
+                        boolean log;
+                        File file = new File(Obb, "s7coms");
+                        if( file.exists() ) {
+                            File[] files = file.listFiles();
+                            for(int j=0; j<files.length; j++) {
+                                if(files[j].isDirectory()) {
+                                    File[] files2 = files[j].listFiles();
+                                    for (int k=0;k < files2.length;k++){
+                                        if(files2[k].isDirectory()) {
+                                            File[] files3 = files2[k].listFiles();
+                                            for (int l=0;l < files3.length;l++){
+                                                log = files3[l].delete();
+                                            }
+                                        }
+                                        log = files2[k].delete();
+                                    }
+                                }
+                                log = files[j].delete();
+                            }
+                        }
+                        log = file.delete();
+                        file_check();
+                        Toast.makeText(getBaseContext(), "Course Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     /// getObbDir() <> getFilesDir()

@@ -72,7 +72,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -92,7 +92,6 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp1"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -103,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2. Reflex Klystron Mode Characteristics."/>
+                    android:text="1. Reflex Klystron Characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -128,7 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3. VSWR and Frequency measurement."/>
+                    android:text="2. VSWR and Frequency measurement."/>
             </LinearLayout>
 
             <LinearLayout
@@ -147,7 +146,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -172,7 +171,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -192,7 +191,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp5"
+                android:layout_below="@id/s7comsexp3"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -203,7 +202,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6. Directional Coupler Characteristics."/>
+                    android:text="3. Directional Coupler Characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -222,7 +221,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -247,7 +246,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -272,7 +271,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -297,7 +296,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -317,7 +316,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp10"
+                android:layout_below="@id/s7comsexp6"
                 android:clickable="false"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -373,7 +372,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -393,7 +392,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp12"
+                android:layout_below="@id/s7comsexp11"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -404,7 +403,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3. Setting up of Fiber optic Digital link."/>
+                    android:text="2. Setting up of Fiber optic Digital link."/>
             </LinearLayout>
 
             <LinearLayout
@@ -423,7 +422,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -448,7 +447,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -473,7 +472,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -493,7 +492,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s7comsexp16"
+                android:layout_below="@id/s7comsexp13"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -504,7 +503,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Power vs Current (P-I) characteristics and measure slope efficiency of LED."/>
+                    android:text="3. Power vs Current (P-I) characteristics and measure slope efficiency of LED."/>
             </LinearLayout>
 
             <LinearLayout
@@ -529,7 +528,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8. Voltage vs Current (V-I) characteristics of LED."/>
+                    android:text="4. Voltage vs Current (V-I) characteristics of LED."/>
             </LinearLayout>
 
             <LinearLayout
@@ -548,7 +547,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -573,7 +572,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -598,7 +597,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s7coms_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"

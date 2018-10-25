@@ -77,7 +77,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2 . Introduction to EDA Tools"/>
+                    android:text="2 . Study of symbols, EDA &amp; Datasheets"/>
             </LinearLayout>
 
             <LinearLayout
@@ -102,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3 . Familiarisation of Testing Instruments"/>
+                    android:text="3 . Familiarisation of Lab Equipments"/>
             </LinearLayout>
 
             <LinearLayout
@@ -152,7 +152,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5 . Interconnection Methods and Soldering"/>
+                    android:text="5 . Interconnection Methods and Soldering Practice"/>
             </LinearLayout>
 
             <LinearLayout
@@ -252,7 +252,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9 . Square wave Generation using 555"/>
+                    android:text="9 . Square wave Generation using IC 555"/>
             </LinearLayout>
 
             <LinearLayout
@@ -277,7 +277,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10 . Sine wave generation using 741"/>
+                    android:text="10 . Sine wave generation using IC 741"/>
             </LinearLayout>
 
             <LinearLayout
@@ -504,13 +504,6 @@
                     android:textColor="@color/colorWhite"
                     android:text="19 . Introduction to Robotics"/>
             </LinearLayout>
-
         </RelativeLayout>
-
-
-
-
     </ScrollView>
-
-
 </LinearLayout>

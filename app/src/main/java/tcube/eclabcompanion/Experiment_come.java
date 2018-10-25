@@ -107,28 +107,25 @@ public class Experiment_come extends AppCompatActivity {
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6comeexp7:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s6come/s6comeexp7.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s6come/s6comeexp7.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6comeexp8:
                 file = new File(Obb, "s6come/s6comeexp8.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s6comeexp9:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s6come/s6comeexp9.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s6comeexp9:
+                file = new File(Obb, "s6come/s6comeexp9.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s6come_choose"
+                break;*/
             case R.id.s6comeexp10:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s6come/s6comeexp10.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s6come/s6comeexp10.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6comeexp11:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s6come/s6comeexp11.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s6come/s6comeexp11.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s6comeexp12:
                 file = new File(Obb, "s6come/s6comeexp12.html");
@@ -146,34 +143,11 @@ public class Experiment_come extends AppCompatActivity {
                 file = new File(Obb, "s6come/s6comeexp15.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s6comeexp16:
+            /*case R.id.s6comeexp16:
                 file = new File(Obb, "s6come/s6comeexp16.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp17:
-                file = new File(Obb, "s6come/s6comeexp17.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp18:
-                file = new File(Obb, "s6come/s6comeexp18.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp19:
-                file = new File(Obb, "s6come/s6comeexp19.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp20:
-                file = new File(Obb, "s6come/s6comeexp20.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp21:
-                file = new File(Obb, "s6come/s6comeexp21.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s6comeexp22:
-                file = new File(Obb, "s6come/s6comeexp22.html");
-                webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s6come_choose"
+                break;*/
         }
     }
 

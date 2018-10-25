@@ -82,136 +82,142 @@ public class Experiment_eda extends AppCompatActivity {
         webview.getSettings().setBuiltInZoomControls(true); //Enable zoom
         screen_flag = 1; //We have entered HTML view.
         switch (view.getId()) {
-            case R.id.s3edaexpA:
-                file = new File(Obb, "s3eda/s3edaexp23.html");
+            /*case R.id.s3edaexpA:
+                file = new File(Obb, "s3eda/A/exp0/exp0.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s3eda_choose"
+                break;*/
             case R.id.s3edaexp1:
-                file = new File(Obb, "s3eda/s3edaexp1.html");
+                file = new File(Obb, "s3eda/A/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp2:
-                file = new File(Obb, "s3eda/s3edaexp2.html");
+                file = new File(Obb, "s3eda/A/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s3edaexp3:
-                file = new File(Obb, "s3eda/s3edaexp3.html");
+            /*case R.id.s3edaexp3:
+                file = new File(Obb, "s3eda/A/exp3/exp3.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s3edaexp4:
-                file = new File(Obb, "s3eda/s3edaexp4.html");
+                android:onClick="s3eda_choose"
+                break;*/
+            /*case R.id.s3edaexp4:
+                file = new File(Obb, "s3eda/A/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s3eda_choose"
+                break;*/
             case R.id.s3edaexp5:
-                file = new File(Obb, "s3eda/s3edaexp5.html");
+                file = new File(Obb, "s3eda/A/exp5/exp5.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp6:
-                file = new File(Obb, "s3eda/s3edaexp6.html");
+                file = new File(Obb, "s3eda/A/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp7:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s3eda/s3edaexp7.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s3edaexp8:
-                file = new File(Obb, "s3eda/s3edaexp8.html");
+                file = new File(Obb, "s3eda/A/exp7/exp7.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            /*case R.id.s3edaexp8:
+                file = new File(Obb, "s3eda/A/exp8/exp8.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s3eda_choose"
                 break;
             case R.id.s3edaexp9:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s3eda/s3edaexp9.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s3eda/A/exp9/exp9.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s3eda_choose"
                 break;
             case R.id.s3edaexp10:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s3eda/s3edaexp10.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s3eda/A/exp10/exp10.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s3eda_choose"
                 break;
             case R.id.s3edaexp11:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s3eda/s3edaexp11.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s3eda/A/exp11/exp11.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s3eda_choose"
                 break;
             case R.id.s3edaexp12:
-                file = new File(Obb, "s3eda/s3edaexp12.html");
+                file = new File(Obb, "s3eda/A/exp12/exp12.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s3eda_choose"
                 break;
             case R.id.s3edaexpB:
-                file = new File(Obb, "s3eda/s3edaexp12.html");
+                file = new File(Obb, "s3eda/B/exp0/exp0.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s3eda_choose"
+                break;*/
             case R.id.s3edaexp13:
-                file = new File(Obb, "s3eda/s3edaexp13.html");
+                file = new File(Obb, "s3eda/B/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp14:
-                file = new File(Obb, "s3eda/s3edaexp14.html");
+                file = new File(Obb, "s3eda/B/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp15:
-                file = new File(Obb, "s3eda/s3edaexp15.html");
+                file = new File(Obb, "s3eda/B/exp3/exp3.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp16:
-                file = new File(Obb, "s3eda/s3edaexp16.html");
+                file = new File(Obb, "s3eda/B/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp17:
-                file = new File(Obb, "s3eda/s3edaexp17.html");
+                file = new File(Obb, "s3eda/B/exp5/exp5.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp18:
-                file = new File(Obb, "s3eda/s3edaexp18.html");
+                file = new File(Obb, "s3eda/B/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp19:
-                file = new File(Obb, "s3eda/s3edaexp19.html");
+                file = new File(Obb, "s3eda/B/exp7/exp7.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp20:
-                file = new File(Obb, "s3eda/s3edaexp20.html");
+                file = new File(Obb, "s3eda/B/exp8/exp8.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s3edaexpC:
-                file = new File(Obb, "s3eda/s3edaexp20.html");
+            /*case R.id.s3edaexpC:
+                file = new File(Obb, "s3eda/C/exp0/exp0.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s3eda_choose"
+                break;*/
             case R.id.s3edaexp21:
-                file = new File(Obb, "s3eda/s3edaexp21.html");
+                file = new File(Obb, "s3eda/C/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp22:
-                file = new File(Obb, "s3eda/s3edaexp22.html");
+                file = new File(Obb, "s3eda/C/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp23:
-                file = new File(Obb, "s3eda/s3edaexp23.html");
+                file = new File(Obb, "s3eda/C/exp3/exp3.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp24:
-                file = new File(Obb, "s3eda/s3edaexp24.html");
+                file = new File(Obb, "s3eda/C/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp25:
-                file = new File(Obb, "s3eda/s3edaexp25.html");
+                file = new File(Obb, "s3eda/C/exp5/exp5.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp26:
-                file = new File(Obb, "s3eda/s3edaexp26.html");
+                file = new File(Obb, "s3eda/C/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp27:
-                file = new File(Obb, "s3eda/s3edaexp27.html");
+                file = new File(Obb, "s3eda/C/exp7/exp7.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp28:
-                file = new File(Obb, "s3eda/s3edaexp28.html");
+                file = new File(Obb, "s3eda/C/exp8/exp8.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s3edaexp29:
-                file = new File(Obb, "s3eda/s3edaexp29.html");
+                file = new File(Obb, "s3eda/C/exp9/exp9.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
         }

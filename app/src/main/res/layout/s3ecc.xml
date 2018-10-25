@@ -52,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1. VI Characteristics of rectifier and zener diodes."/>
+                    android:text="1. VI Characteristics of Zener diodes."/>
             </LinearLayout>
 
             <LinearLayout
@@ -77,7 +77,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2. RC integrating and differentiating circuits."/>
+                    android:text="2. RC Integrating and Differentiating circuits."/>
             </LinearLayout>
 
             <LinearLayout
@@ -127,7 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4. Fullwave Rectifier -with and without filter- ripple factor and regulation."/>
+                    android:text="4. Fullwave Rectifier."/>
             </LinearLayout>
 
             <LinearLayout
@@ -202,7 +202,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Characteristics of MOSFET in CS configuration and evaluation of parameters"/>
+                    android:text="7. Characteristics of MOSFET in CS configuration"/>
             </LinearLayout>
 
             <LinearLayout
@@ -252,7 +252,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9. MOSFET amplifier - CS"/>
+                    android:text="9. MOSFET Amplifier (CS) - Frequency Response Characteristics"/>
             </LinearLayout>
 
             <LinearLayout
@@ -277,7 +277,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10. Cascade amplifier – gain and frequency response"/>
+                    android:text="10. Cascade amplifier"/>
             </LinearLayout>
 
             <LinearLayout
@@ -302,10 +302,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="11. Cascode amplifier -frequency response"/>
+                    android:text="11. Cascode amplifier"/>
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
@@ -320,8 +321,7 @@
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3ecc_choose">
+                android:paddingTop="@dimen/activity_vertical_margin">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -341,7 +341,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s3eccexp12"
+                android:layout_below="@id/s3eccexp11"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -352,7 +352,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="13. Low frequency oscillators –RC phaseshift, Wien bridge"/>
+                    android:text="12. Low frequency oscillators –RC phaseshift, Wien bridge"/>
             </LinearLayout>
 
             <LinearLayout
@@ -377,7 +377,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="14. High frequency oscillators –Colpitt’s and Hartley"/>
+                    android:text="13. High frequency oscillators –Colpitt’s and Hartley"/>
             </LinearLayout>
 
             <LinearLayout
@@ -402,7 +402,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="15. Power amplifiers (transformer less) - Class B and Class AB"/>
+                    android:text="14. Power amplifiers - Class B and Class AB"/>
             </LinearLayout>
 
             <LinearLayout
@@ -427,7 +427,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="16. Transistor series voltage regulator"/>
+                    android:text="15. Transistor series voltage regulator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -452,7 +452,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="17. Tuned amplifier - frequency response"/>
+                    android:text="16. Tuned amplifier"/>
             </LinearLayout>
 
             <LinearLayout
@@ -477,7 +477,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="18. Bootstrap sweep circuit"/>
+                    android:text="17. Bootstrap sweep circuit"/>
             </LinearLayout>
 
             <LinearLayout
@@ -502,7 +502,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="19. Multivibrators -Astable, Monostable and Bistable"/>
+                    android:text="18. Multivibrators"/>
             </LinearLayout>
 
             <LinearLayout
@@ -527,7 +527,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="20. Schmitt trigger"/>
+                    android:text="19. Schmitt trigger"/>
             </LinearLayout>
 
         </RelativeLayout>

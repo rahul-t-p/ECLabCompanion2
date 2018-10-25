@@ -126,11 +126,11 @@ public class Experiment_ecc extends AppCompatActivity {
                 file = new File(Obb, "s3ecc/EXPT11/EXPT11.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s3eccexp12:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
+            //case R.id.s3eccexp12:
+                //android:onClick="s3ecc_choose"
                 //file = new File(Obb, "s3ecc/EXPT12/EXPT12.html");
                 //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                //break;
             case R.id.s3eccexp13:
                 file = new File(Obb, "s3ecc/EXPT13/EXPT13.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());

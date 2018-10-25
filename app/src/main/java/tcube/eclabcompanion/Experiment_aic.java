@@ -87,11 +87,11 @@ public class Experiment_aic extends AppCompatActivity {
                 file = new File(Obb, "s4aic/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4aicexp1:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4aic/s4aicexp01.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s4aicexp1:
+                file = new File(Obb, "s4aic/s4aicexp01.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4aic_choose"
+                break;*/
             case R.id.s4aicexp2:
                 file = new File(Obb, "s4aic/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
@@ -130,29 +130,28 @@ public class Experiment_aic extends AppCompatActivity {
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s4aicexp11:
-                //Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
                 file = new File(Obb, "s4aic/exp11/exp11.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4aicexp12:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4aic/s4aicexp12.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+            /*case R.id.s4aicexp12:
+                file = new File(Obb, "s4aic/s4aicexp12.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4aic_choose"
                 break;
             case R.id.s4aicexp13:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4aic/s4aicexp13.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                file = new File(Obb, "s4aic/s4aicexp13.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4aic_choose"
+                break;*/
             case R.id.s4aicexp14:
                 file = new File(Obb, "s4aic/exp12/exp12.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4aicexp15:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4aic/s4aicexp15.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s4aicexp15:
+                file = new File(Obb, "s4aic/s4aicexp15.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4aic_choose"
+                break;*/
         }
     }
 

@@ -82,94 +82,104 @@ public class Experiment_coms extends AppCompatActivity {
         webview.getSettings().setBuiltInZoomControls(true); //Enable zoom
         screen_flag = 1; //We have entered HTML view.
         switch (view.getId()) {
-            case R.id.s7comsexp1:
-                file = new File(Obb, "s7coms/s7comsexp1.html");
+            /*case R.id.s7comsexp1:
+                file = new File(Obb, "s7coms/A/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s7coms_choose"
+                break;*/
             case R.id.s7comsexp2:
-                file = new File(Obb, "s7coms/s7comsexp2.html");
+                file = new File(Obb, "s7coms/A/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s7comsexp3:
-                file = new File(Obb, "s7coms/s7comsexp3.html");
+                file = new File(Obb, "s7coms/A/exp3/exp3.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s7comsexp4:
-                file = new File(Obb, "s7coms/s7comsexp4.html");
+            /*case R.id.s7comsexp4:
+                file = new File(Obb, "s7coms/A/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp5:
-                file = new File(Obb, "s7coms/s7comsexp5.html");
+                file = new File(Obb, "s7coms/A/exp5/exp5.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s7coms_choose"
+                break;*/
             case R.id.s7comsexp6:
-                file = new File(Obb, "s7coms/s7comsexp6.html");
+                file = new File(Obb, "s7coms/A/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s7comsexp7:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s7coms/s7comsexp7.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+            /*case R.id.s7comsexp7:
+                file = new File(Obb, "s7coms/A/exp7/exp7.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp8:
-                file = new File(Obb, "s7coms/s7comsexp8.html");
+                file = new File(Obb, "s7coms/A/exp8/exp8.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp9:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s7coms/s7comsexp9.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
+                file = new File(Obb, "s7coms/A/exp9/exp9.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp10:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s7coms/s7comsexp10.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                file = new File(Obb, "s7coms/A/exp10/exp10.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
+                break;*/
             case R.id.s7comsexp11:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s7coms/s7comsexp11.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s7comsexp12:
-                file = new File(Obb, "s7coms/s7comsexp12.html");
+                file = new File(Obb, "s7coms/B/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
+            /*case R.id.s7comsexp12:
+                file = new File(Obb, "s7coms/B/exp2/exp2.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
+                break;*/
             case R.id.s7comsexp13:
-                file = new File(Obb, "s7coms/s7comsexp13.html");
+                file = new File(Obb, "s7coms/B/exp3/exp3.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s7comsexp14:
-                file = new File(Obb, "s7coms/s7comsexp14.html");
+            /*case R.id.s7comsexp14:
+                file = new File(Obb, "s7coms/B/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp15:
-                file = new File(Obb, "s7coms/s7comsexp15.html");
+                file = new File(Obb, "s7coms/B/exp5/exp5.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp16:
-                file = new File(Obb, "s7coms/s7comsexp16.html");
+                file = new File(Obb, "s7coms/B/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s7coms_choose"
+                break;*/
             case R.id.s7comsexp17:
-                file = new File(Obb, "s7coms/s7comsexp17.html");
+                file = new File(Obb, "s7coms/B/exp7/exp7.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s7comsexp18:
-                file = new File(Obb, "s7coms/s7comsexp18.html");
+                file = new File(Obb, "s7coms/B/exp8/exp8.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s7comsexp19:
-                file = new File(Obb, "s7coms/s7comsexp19.html");
+            /*case R.id.s7comsexp19:
+                file = new File(Obb, "s7coms/B/exp9/exp9.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp20:
-                file = new File(Obb, "s7coms/s7comsexp20.html");
+                file = new File(Obb, "s7coms/B/exp10/exp10.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s7coms_choose"
                 break;
             case R.id.s7comsexp21:
-                file = new File(Obb, "s7coms/s7comsexp21.html");
+                file = new File(Obb, "s7coms/B/exp11/exp11.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s7coms_choose"
+                break;*/
         }
     }
 

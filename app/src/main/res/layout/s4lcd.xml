@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1 . Realization of functions using basic and universal gates."/>
+                    android:text="1. Realization of functions using basic and universal gates."/>
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2 . Design and Realization of half /full adder and subtractor using basic gates and universal
+                    android:text="2. Design and Realization of half, full adder and subtractor using basic gates and universal
 gates."/>
             </LinearLayout>
 
@@ -127,7 +127,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3 . 4 bit adder/subtractor and BCD adder using 7483."/>
+                    android:text="3. 4 bit adder/subtractor and BCD adder using 7483."/>
             </LinearLayout>
 
             <LinearLayout
@@ -152,7 +152,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4 . 2/3 bit binary comparator."/>
+                    android:text="4. 2 bit binary comparator."/>
             </LinearLayout>
 
             <LinearLayout
@@ -177,7 +177,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5 . Binary to Gray and Gray to Binary converters."/>
+                    android:text="5. Binary to Gray and Gray to Binary converters."/>
             </LinearLayout>
 
             <LinearLayout
@@ -202,7 +202,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6 . Study of Flip Flops: S-R, D, T, JK and Master Slave JK FF using NAND gates"/>
+                    android:text="6. Study of Flip Flops: SR, D, T, JK and Master Slave JK FF using NAND gates"/>
             </LinearLayout>
 
             <LinearLayout
@@ -227,7 +227,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7 . Asynchronous Counter: Realization of 4-bit counter"/>
+                    android:text="7. Asynchronous Counter: Realization of 4-bit counter"/>
             </LinearLayout>
 
             <LinearLayout
@@ -246,13 +246,13 @@ gates."/>
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4lcd_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8 . Asynchronous Counter: Realization of Mod-N counters."/>
+                    android:text="8. Asynchronous Counter: Realization of Mod-N counters."/>
             </LinearLayout>
 
             <LinearLayout
@@ -266,7 +266,7 @@ gates."/>
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s4lcdexp8"
+                android:layout_below="@id/s4lcdexp7"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -277,7 +277,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9 . Asynchronous Counter:3 bit up/down counter."/>
+                    android:text="8. Asynchronous Counter:3 bit up/down counter."/>
             </LinearLayout>
 
             <LinearLayout
@@ -302,7 +302,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10 . Synchronous Counter: Realization of 4-bit up/down counter."/>
+                    android:text="9 . Synchronous Counter: Realization of 4-bit up/down counter."/>
             </LinearLayout>
 
             <LinearLayout
@@ -321,7 +321,7 @@ gates."/>
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4lcd_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -341,7 +341,7 @@ gates."/>
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s4lcdexp11"
+                android:layout_below="@id/s4lcdexp10"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -352,7 +352,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="12 . Synchronous Counter:3 bit up/down counter"/>
+                    android:text="10 . Synchronous Counter:3 bit up/down counter"/>
             </LinearLayout>
 
             <LinearLayout
@@ -377,7 +377,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="13 . Shift Register: Study of shift right, SIPO, SISO, PIPO, PISO (using FF and 7495)"/>
+                    android:text="11 . Shift Register: Study of shift right, SIPO, SISO, PIPO, PISO (using FF and 7495)"/>
             </LinearLayout>
 
             <LinearLayout
@@ -402,7 +402,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="14 . Ring counter and Johnson Counter. (using FF and 7495)"/>
+                    android:text="12 . Ring counter and Johnson Counter. (using FF and 7495)"/>
             </LinearLayout>
 
             <LinearLayout
@@ -427,7 +427,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="15 . Realization of counters using IC’s (7490, 7492, 7493)."/>
+                    android:text="13 . Realization of counters using IC’s (7490, 7492, 7493)."/>
             </LinearLayout>
 
             <LinearLayout
@@ -452,7 +452,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="16 . Multiplexers and De-multiplexers using gates and ICs. (74150, 74154)"/>
+                    android:text="14 . Multiplexers and De-multiplexers using gates and ICs. (74150, 74154)"/>
             </LinearLayout>
 
             <LinearLayout
@@ -477,7 +477,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="17 . Realization of combinational circuits using MUX and DEMUX."/>
+                    android:text="15 . Realization of combinational circuits using MUX and DEMUX."/>
             </LinearLayout>
 
             <LinearLayout
@@ -496,7 +496,7 @@ gates."/>
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4lcd_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -516,7 +516,7 @@ gates."/>
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s4lcdexp18"
+                android:layout_below="@id/s4lcdexp17"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -527,7 +527,7 @@ gates."/>
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="19 . LED Display: Use of BCD to 7 Segment decoder / driver chip to drive LED display"/>
+                    android:text="16 . LED Display: Use of BCD to 7 Segment decoder / driver chip to drive LED display"/>
             </LinearLayout>
 
             <LinearLayout
@@ -546,7 +546,7 @@ gates."/>
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4lcd_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"

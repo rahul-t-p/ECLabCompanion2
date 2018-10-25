@@ -52,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1 . Familiarization of Operational amplifiers."/>
+                    android:text="1 . Basic Circuits using Operational amplifiers."/>
             </LinearLayout>
 
             <LinearLayout
@@ -71,7 +71,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4aic_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -91,7 +91,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s4aicexp1"
+                android:layout_below="@id/s4aicexp0"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -102,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3. Difference Amplifier and Instrumentation amplifier."/>
+                    android:text="2. Difference Amplifier and Instrumentation amplifier."/>
             </LinearLayout>
 
             <LinearLayout
@@ -127,7 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4. Schmitt trigger circuit using Op Amps."/>
+                    android:text="3. Schmitt trigger circuit using Op Amps."/>
             </LinearLayout>
 
             <LinearLayout
@@ -152,7 +152,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5. Astable and Monostable multivibrator using Op Amps."/>
+                    android:text="4. Multivibrators using Op Amps."/>
             </LinearLayout>
 
             <LinearLayout
@@ -177,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6. Timer IC NE555."/>
+                    android:text="5. Astable Multivibrator using IC NE555."/>
             </LinearLayout>
 
             <LinearLayout
@@ -202,7 +202,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Triangular and square wave generators using Op Amps."/>
+                    android:text="6. Triangular wave generator using Op Amps."/>
             </LinearLayout>
 
             <LinearLayout
@@ -227,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8. Wien bridge oscillator using Op-Amp - without &amp; with amplitude stabilization."/>
+                    android:text="7. Wien bridge oscillator using Op-Amps."/>
             </LinearLayout>
 
             <LinearLayout
@@ -252,7 +252,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9. RC Phase shift Oscillator."/>
+                    android:text="8. RC Phase shift Oscillator."/>
             </LinearLayout>
 
             <LinearLayout
@@ -277,7 +277,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10. Precision rectifiers using Op-Amp."/>
+                    android:text="9. Precision rectifiers using Op-Amp."/>
             </LinearLayout>
 
             <LinearLayout
@@ -302,7 +302,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="11. Active second order filters using Op-Amp (LPF, HPF, BPF and BSF)."/>
+                    android:text="10. Active second order filters using Op-Amp (LPF, HPF and BPF)."/>
             </LinearLayout>
 
             <LinearLayout
@@ -327,7 +327,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="12. Notch filters to eliminate the 50Hz power line frequency."/>
+                    android:text="11. Notch filters to eliminate the 50Hz power line frequency."/>
             </LinearLayout>
 
             <LinearLayout
@@ -346,7 +346,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4aic_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -371,13 +371,13 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4aic_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="14. A/D converters- counter ramp and flash type."/>
+                    android:text="12. A/D converters- counter ramp and flash type."/>
             </LinearLayout>
 
             <LinearLayout
@@ -391,7 +391,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s4aicexp13"
+                android:layout_below="@id/s4aicexp11"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -402,7 +402,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="15. D/A Converters- ladder circuit."/>
+                    android:text="12. 3 Bit D/A Converter."/>
             </LinearLayout>
 
             <LinearLayout
@@ -421,7 +421,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s4aic_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"

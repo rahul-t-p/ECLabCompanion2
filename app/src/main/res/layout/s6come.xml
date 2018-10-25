@@ -176,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6. FM Generation and Demodulation Using 4046"/>
+                    android:text="6. FM Generation and Demodulation Using PLL IC 565"/>
             </LinearLayout>
 
             <LinearLayout
@@ -201,7 +201,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Frequency Multiplier using 4046"/>
+                    android:text="7. Frequency Multiplier using PLL IC 565"/>
             </LinearLayout>
 
             <LinearLayout
@@ -245,7 +245,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -265,7 +265,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp9"
+                android:layout_below="@id/s6comeexp8"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -276,7 +276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="10. Pseudo-random Binary Sequence Generator"/>
+                    android:text="9. Pseudo-random Binary Sequence Generator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -301,7 +301,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="11. Time Division Multiplexing"/>
+                    android:text="10. Time Division Multiplexing"/>
             </LinearLayout>
 
             <LinearLayout
@@ -326,7 +326,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="12. Delta Modulation"/>
+                    android:text="11. Delta Modulation"/>
             </LinearLayout>
 
             <LinearLayout
@@ -351,7 +351,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="13. Sigma Delta Modulation"/>
+                    android:text="12. Generation of PAM,PWM and PPM"/>
             </LinearLayout>
 
             <LinearLayout
@@ -376,7 +376,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="14. Adaptive Delta Modulation"/>
+                    android:text="13. Generation of BPSK"/>
             </LinearLayout>
 
             <LinearLayout
@@ -401,7 +401,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="15. PAM Modulator and Demodulator"/>
+                    android:text="14. Generation of PCM"/>
             </LinearLayout>
 
             <LinearLayout
@@ -420,171 +420,14 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="16. PWM Using 555"/>
+                    android:text="15. PWM Using 555"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp17"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp16"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="17. PPM Using 555"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp18"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp17"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="18. Binary Phase Shift Keying"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp19"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp18"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="19. Differential Phase Shift Keying"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp20"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp19"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="20. Differential Encoded Phase Shift Keying"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp21"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp20"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="21. PCM"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal"
-                android:minHeight="@dimen/minimum_height_ads"
-                android:id="@+id/s6comeexp22"
-                android:layout_marginBottom="@dimen/small_gap"
-                android:layout_marginStart="@dimen/small_gap"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s6comeexp21"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s6come_choose">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/colorWhite"
-                    android:text="22. Quadrature Phase Shift Keying"/>
-            </LinearLayout>
-
         </RelativeLayout>
-
-
-
-
     </ScrollView>
-
-
 </LinearLayout>

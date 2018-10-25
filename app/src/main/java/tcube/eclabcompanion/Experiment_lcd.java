@@ -115,11 +115,11 @@ public class Experiment_lcd extends AppCompatActivity {
                 file = new File(Obb, "s4lcd/s4lcdexp07.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4lcdexp8:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4lcd/s4lcdexp08.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s4lcdexp8:
+                file = new File(Obb, "s4lcd/s4lcdexp08.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4lcd_choose"
+                break;*/
             case R.id.s4lcdexp9:
                 file = new File(Obb, "s4lcd/s4lcdexp09.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
@@ -128,11 +128,11 @@ public class Experiment_lcd extends AppCompatActivity {
                 file = new File(Obb, "s4lcd/s4lcdexp10.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4lcdexp11:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4lcd/s4lcdexp11.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s4lcdexp11:
+                file = new File(Obb, "s4lcd/s4lcdexp11.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4lcd_choose"
+                break;*/
             case R.id.s4lcdexp12:
                 file = new File(Obb, "s4lcd/s4lcdexp12.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
@@ -157,20 +157,20 @@ public class Experiment_lcd extends AppCompatActivity {
                 file = new File(Obb, "s4lcd/s4lcdexp17.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4lcdexp18:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4lcd/s4lcdexp18.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s4lcdexp18:
+                file = new File(Obb, "s4lcd/s4lcdexp18.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4lcd_choose"
+                break;*/
             case R.id.s4lcdexp19:
                 file = new File(Obb, "s4lcd/s4lcdexp19.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s4lcdexp20:
-                Toast.makeText(getBaseContext(), "Experiment not included yet !", Toast.LENGTH_SHORT).show();
-                //file = new File(Obb, "s4lcd/s4lcdexp20.html");
-                //webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+            /*case R.id.s4lcdexp20:
+                file = new File(Obb, "s4lcd/s4lcdexp20.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s4lcd_choose"
+                break;*/
         }
     }
 

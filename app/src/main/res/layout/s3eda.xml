@@ -32,6 +32,7 @@
 
 
             <LinearLayout
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
@@ -45,8 +46,7 @@
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:paddingTop="@dimen/activity_vertical_margin">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -63,7 +63,6 @@
                 android:orientation="horizontal"
                 android:minHeight="@dimen/minimum_height_ads"
                 android:id="@+id/s3edaexp1"
-                android:layout_below="@id/s3edaexpA"
                 android:layout_marginBottom="@dimen/small_gap"
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
@@ -122,7 +121,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -147,7 +146,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -167,7 +166,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s3edaexp4"
+                android:layout_below="@id/s3edaexp2"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -178,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5. RC coupled amplifier"/>
+                    android:text="3. RC coupled amplifier"/>
             </LinearLayout>
 
             <LinearLayout
@@ -203,7 +202,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6. RC oscillator (RC phase shift &amp; Wien Bridge)"/>
+                    android:text="4. RC Phase Shift Oscillator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -228,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Astable multivibrator"/>
+                    android:text="5. Astable multivibrator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -247,7 +246,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -272,7 +271,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -297,7 +296,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -322,7 +321,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -347,7 +346,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -373,7 +372,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -394,7 +393,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s3edaexpB"
+                android:layout_below="@id/s3edaexp7"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -405,7 +404,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1. Solve /plot the mathematical equations"/>
+                    android:text="6. Solve /plot the mathematical equations"/>
             </LinearLayout>
 
             <LinearLayout
@@ -430,7 +429,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2. Obtain different types of plots (2D/3D, surface plot, polar plot)"/>
+                    android:text="7. Obtain different types of plots (2D/3D, surface plot, polar plot)"/>
             </LinearLayout>
 
             <LinearLayout
@@ -455,7 +454,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3. Generate and plot various signals like sine square, pulse in same window."/>
+                    android:text="8. Generate and plot various signals like sine square, pulse in same window."/>
             </LinearLayout>
 
             <LinearLayout
@@ -480,7 +479,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4. Plot the diode/transistor characteristics."/>
+                    android:text="9. Plot the diode/transistor characteristics."/>
             </LinearLayout>
 
             <LinearLayout
@@ -505,7 +504,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5. Solve node, mesh and loop equations of simple network circuits."/>
+                    android:text="10. Solve node, mesh and loop equations of simple network circuits."/>
             </LinearLayout>
 
             <LinearLayout
@@ -530,7 +529,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6. Find the poles and zeros hence plot the transfer functions."/>
+                    android:text="11. Find the poles and zeros hence plot the transfer functions."/>
             </LinearLayout>
 
             <LinearLayout
@@ -555,7 +554,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Sort numbers in ascending order and save to another text file"/>
+                    android:text="12. Sort numbers in ascending order and save to another text file"/>
             </LinearLayout>
 
             <LinearLayout
@@ -580,7 +579,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8. Plot a full wave rectified waveform using Fourier series"/>
+                    android:text="13. Plot a full wave rectified waveform using Fourier series"/>
             </LinearLayout>
 
 
@@ -600,7 +599,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:onClick="s3eda_choose">
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -621,7 +620,7 @@
                 android:layout_marginStart="@dimen/small_gap"
                 android:layout_marginEnd="@dimen/small_gap"
                 android:layout_marginTop="@dimen/small_gap"
-                android:layout_below="@id/s3edaexpC"
+                android:layout_below="@id/s3edaexp20"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -632,7 +631,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="1. Basic gates &amp; universal gates"/>
+                    android:text="14. Basic gates &amp; universal gates"/>
             </LinearLayout>
 
             <LinearLayout
@@ -657,7 +656,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="2. Combinational Circuits"/>
+                    android:text="15. Half Adder"/>
             </LinearLayout>
 
             <LinearLayout
@@ -682,7 +681,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3. Full adder in 3 modelling styles"/>
+                    android:text="16. Full adder"/>
             </LinearLayout>
 
             <LinearLayout
@@ -707,7 +706,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="4. Multiplexer &amp; De-multiplexer"/>
+                    android:text="17. Multiplexer &amp; De-multiplexer"/>
             </LinearLayout>
 
             <LinearLayout
@@ -732,7 +731,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="5. Decoder &amp; Encoder"/>
+                    android:text="18. Decoder &amp; Encoder"/>
             </LinearLayout>
 
             <LinearLayout
@@ -757,7 +756,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="6. 4 bit adder &amp; BCD adder"/>
+                    android:text="19. 4 bit ripple carry adder"/>
             </LinearLayout>
 
             <LinearLayout
@@ -782,7 +781,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="7. Flipflops (SR,JK,T,D)"/>
+                    android:text="20. D Flipflop AND T Flipflop"/>
             </LinearLayout>
 
             <LinearLayout
@@ -807,7 +806,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="8. Binary Counters"/>
+                    android:text="21. Binary Counters"/>
             </LinearLayout>
 
             <LinearLayout
@@ -832,7 +831,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="9. Finite state machines"/>
+                    android:text="22. Sequence Detector"/>
             </LinearLayout>
 
         </RelativeLayout>
