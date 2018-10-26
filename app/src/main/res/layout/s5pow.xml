@@ -300,7 +300,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/colorWhite"
-                    android:text="3a. Transducer measurements using Thermocouple."/>
+                    android:text="3. Transducer measurements using Thermocouple."/>
             </LinearLayout>
 
             <LinearLayout

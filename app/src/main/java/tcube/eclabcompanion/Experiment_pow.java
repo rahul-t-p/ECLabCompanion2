@@ -131,11 +131,11 @@ public class Experiment_pow extends AppCompatActivity {
                 android:onClick="s5pow_choose"
                 break;*/
             case R.id.s5powexp11a:
-                file = new File(Obb, "s5pow/B/exp5/exp5a.html");
+                file = new File(Obb, "s5pow/B/exp5a/exp5a.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             case R.id.s5powexp11b:
-                file = new File(Obb, "s5pow/B/exp5/exp5b.html");
+                file = new File(Obb, "s5pow/B/exp5b/exp5b.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
             /*case R.id.s5powexp12:
