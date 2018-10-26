@@ -372,8 +372,8 @@ public class Course_list extends AppCompatActivity {
         if (!(activeNetwork != null && activeNetwork.isConnected())) { // notify user you are offline
             Toast.makeText(getBaseContext(), "Connection Error. Are You Online ?", Toast.LENGTH_SHORT).show();
         } else {
-            source = "s6come.zip";
-            destin = "s6come";
+            source = "s5pow.zip";
+            destin = "s5pow";
             String url = "https://www.dropbox.com/s/3wf0gc5wxp1wlsh/s5pow.zip?dl=1";
             download.execute(url); //Pass The Url
         }
@@ -620,7 +620,7 @@ public class Course_list extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         File Obb = getFilesDir();
                         boolean log;
-                        File file = new File(Obb, "s5dsp");
+                        File file = new File(Obb, "s5pow");
                         if( file.exists() ) {
                             File[] files = file.listFiles();
                             for(int j=0; j<files.length; j++) {

@@ -53,14 +53,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        file_checkto();
         super.onPause();
     }
 
     @Override
     protected void onRestart() {
-        super.onRestart();
         file_checkto();
+        super.onRestart();
     }
 
     @Override
@@ -101,8 +100,6 @@ public class MainActivity extends AppCompatActivity {
         Intent Course_intent=new Intent(MainActivity.this,Course_list.class);
         Course_intent.putExtras(bundle);
         startActivity(Course_intent);
-
-
     }
 
     public void s1bec_go(View view){
