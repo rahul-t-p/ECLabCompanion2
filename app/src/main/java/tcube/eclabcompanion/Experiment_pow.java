@@ -82,54 +82,67 @@ public class Experiment_pow extends AppCompatActivity {
         webview.getSettings().setBuiltInZoomControls(true); //Enable zoom
         screen_flag = 1; //We have entered HTML view.
         switch (view.getId()) {
-            case R.id.s5powexp1:
+            /*case R.id.s5powexp1:
                 file = new File(Obb, "s5pow/A/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s5pow_choose"
                 break;
             case R.id.s5powexp2:
                 file = new File(Obb, "s5pow/A/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s5pow_choose"
+                break;*/
             case R.id.s5powexp3:
-                file = new File(Obb, "s5pow/A/exp3/exp3.html");
+                file = new File(Obb, "s5pow/A/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s5powexp4:
+            /*case R.id.s5powexp4:
                 file = new File(Obb, "s5pow/A/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s5pow_choose"
                 break;
             case R.id.s5powexp5:
                 file = new File(Obb, "s5pow/A/exp5/exp5.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s5pow_choose"
                 break;
             case R.id.s5powexp6:
                 file = new File(Obb, "s5pow/A/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s5pow_choose"
+                break;*/
             case R.id.s5powexp7:
                 file = new File(Obb, "s5pow/B/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s5powexp8:
+            /*case R.id.s5powexp8:
                 file = new File(Obb, "s5pow/B/exp2/exp2.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s5pow_choose"
                 break;
             case R.id.s5powexp9:
                 file = new File(Obb, "s5pow/B/exp3/exp3.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
+                android:onClick="s5pow_choose"
                 break;
             case R.id.s5powexp10:
                 file = new File(Obb, "s5pow/B/exp4/exp4.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
-            case R.id.s5powexp11:
-                file = new File(Obb, "s5pow/B/exp5/exp5.html");
+                android:onClick="s5pow_choose"
+                break;*/
+            case R.id.s5powexp11a:
+                file = new File(Obb, "s5pow/B/exp5/exp5a.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
                 break;
-            case R.id.s5powexp12:
+            case R.id.s5powexp11b:
+                file = new File(Obb, "s5pow/B/exp5/exp5b.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
+            /*case R.id.s5powexp12:
                 file = new File(Obb, "s5pow/B/exp6/exp6.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
-                break;
+                android:onClick="s5pow_choose"
+                break;*/
         }
     }
 

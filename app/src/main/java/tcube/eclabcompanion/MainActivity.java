@@ -380,7 +380,7 @@ public class MainActivity extends AppCompatActivity {
             if (onlineVersion != null && !onlineVersion.isEmpty()) {
 
                 if (Float.valueOf(currentVersion) < Float.valueOf(onlineVersion)) {
-                    Toast.makeText(getBaseContext(), "A new version of EC Lab Companion is available on PlayStore. Please update for new courses and experiments.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "New version of EC Lab Companion is in the PlayStore. Please update for new courses and experiments.", Toast.LENGTH_LONG).show();
                 }
             }
         }

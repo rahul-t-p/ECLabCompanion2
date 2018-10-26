@@ -82,6 +82,10 @@ public class Experiment_coms extends AppCompatActivity {
         webview.getSettings().setBuiltInZoomControls(true); //Enable zoom
         screen_flag = 1; //We have entered HTML view.
         switch (view.getId()) {
+            case  R.id.s7comsexp0:
+                file = new File(Obb, "s7coms/A/exp0/exp0.html");
+                webview.loadUrl("file:///" + file.getAbsolutePath());
+                break;
             /*case R.id.s7comsexp1:
                 file = new File(Obb, "s7coms/A/exp1/exp1.html");
                 webview.loadUrl("file:///" + file.getAbsolutePath());
